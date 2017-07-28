@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context="com.example.crianbra.proyecto_moviles.MatematicaActivity">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="27dp"
+            android:text="Matemáticas 1"
+            android:textColor="@color/colorPrimary"
+            android:textSize="?attr/listPreferredItemHeightSmall" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:background="@color/colorPrimary"
+            android:text="El objetivo inicial de esta asignatura es conseguir que los estudiantes de primer curso se hagan con los procedimientos prácticos básicos, que permiten la adaptación del estudio de las Matemáticas, en la Universidad"
+            android:textAlignment="gravity"
+            android:textColor="@android:color/background_light"
+            android:textSize="?attr/listPreferredItemPaddingLeft"
+            android:layout_below="@+id/youtube_player"
+            android:layout_centerHorizontal="true" />
+
+        <com.google.android.youtube.player.YouTubePlayerView
+            android:id="@+id/youtube_player"
+            android:layout_width="270dp"
+            android:layout_height="200dp"
+            android:background="#fff"
+            android:layout_below="@+id/textView2"
+            android:layout_alignRight="@+id/textView3"
+            android:layout_alignEnd="@+id/textView3" />
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
