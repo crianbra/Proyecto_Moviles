@@ -33,7 +33,8 @@
             android:text="Nombre Completo"
             android:textColor="@color/colorPrimary"
             android:textSize="?attr/dialogPreferredPadding"
-            android:layout_marginTop="34dp"
+            android:layout_marginTop="11dp"
+            android:layout_below="@+id/edit_dire_perfil"
             android:layout_alignLeft="@+id/edit_nombre_perfil"
             android:layout_alignStart="@+id/edit_nombre_perfil" />
 
@@ -41,97 +42,101 @@
             android:id="@+id/edit_nombre_perfil"
             android:layout_width="270dp"
             android:layout_height="30dp"
-            android:layout_below="@+id/txt_nombre_perfil"
-            android:layout_centerHorizontal="true"
             android:background="@android:color/background_light"
             android:ems="10"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:layout_below="@+id/txt_nombre_perfil"
+            android:layout_alignLeft="@+id/edit_dire_perfil"
+            android:layout_alignStart="@+id/edit_dire_perfil" />
 
         <TextView
             android:id="@+id/txt_colegio_perfil"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/txt_nombre_perfil"
-            android:layout_alignStart="@+id/txt_nombre_perfil"
-            android:layout_below="@+id/edit_nombre_perfil"
             android:text="Colegio o Institución"
             android:textColor="@color/colorPrimary"
-            android:textSize="?attr/dialogPreferredPadding" />
+            android:textSize="?attr/dialogPreferredPadding"
+            android:layout_below="@+id/edit_nombre_perfil"
+            android:layout_alignLeft="@+id/edit_nombre_perfil"
+            android:layout_alignStart="@+id/edit_nombre_perfil" />
 
         <EditText
             android:id="@+id/edit_colegio_perfil"
             android:layout_width="270dp"
             android:layout_height="30dp"
-            android:layout_alignLeft="@+id/edit_nombre_perfil"
-            android:layout_alignStart="@+id/edit_nombre_perfil"
-            android:layout_below="@+id/txt_colegio_perfil"
             android:background="@android:color/background_light"
             android:ems="10"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:layout_below="@+id/txt_colegio_perfil"
+            android:layout_alignLeft="@+id/txt_colegio_perfil"
+            android:layout_alignStart="@+id/txt_colegio_perfil" />
 
         <TextView
             android:id="@+id/txt_dire_perfil"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/txt_colegio_perfil"
-            android:layout_alignStart="@+id/txt_colegio_perfil"
-            android:layout_below="@+id/edit_colegio_perfil"
             android:text="Ciudad"
             android:textColor="@color/colorPrimary"
-            android:textSize="?attr/dialogPreferredPadding" />
+            android:textSize="?attr/dialogPreferredPadding"
+            android:layout_below="@+id/edit_colegio_perfil"
+            android:layout_alignLeft="@+id/edit_colegio_perfil"
+            android:layout_alignStart="@+id/edit_colegio_perfil" />
 
         <EditText
             android:id="@+id/edit_dire_perfil"
             android:layout_width="270dp"
             android:layout_height="30dp"
-            android:layout_below="@+id/txt_dire_perfil"
-            android:layout_centerHorizontal="true"
             android:background="@android:color/background_light"
             android:ems="10"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:layout_above="@+id/edit_conf_contrasenia_perfil"
+            android:layout_alignLeft="@+id/edit_mail_perfil"
+            android:layout_alignStart="@+id/edit_mail_perfil"
+            android:layout_marginBottom="144dp" />
 
         <TextView
             android:id="@+id/txt_mail_perfil"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/edit_dire_perfil"
-            android:layout_alignStart="@+id/edit_dire_perfil"
-            android:layout_below="@+id/edit_dire_perfil"
             android:text="E-Mail"
             android:textColor="@color/colorPrimary"
-            android:textSize="?attr/dialogPreferredPadding" />
+            android:textSize="?attr/dialogPreferredPadding"
+            android:layout_below="@+id/txt_dire_perfil"
+            android:layout_alignLeft="@+id/txt_dire_perfil"
+            android:layout_alignStart="@+id/txt_dire_perfil"
+            android:layout_marginTop="37dp" />
 
         <EditText
             android:id="@+id/edit_mail_perfil"
             android:layout_width="270dp"
             android:layout_height="30dp"
-            android:layout_below="@+id/txt_mail_perfil"
-            android:layout_centerHorizontal="true"
             android:background="@android:color/background_light"
             android:ems="10"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:layout_below="@+id/txt_mail_perfil"
+            android:layout_centerHorizontal="true" />
 
         <TextView
             android:id="@+id/txt_contraseña_perfil"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/edit_mail_perfil"
-            android:layout_alignStart="@+id/edit_mail_perfil"
-            android:layout_below="@+id/edit_mail_perfil"
             android:text="Contraseña"
             android:textColor="@color/colorPrimary"
-            android:textSize="?attr/dialogPreferredPadding" />
+            android:textSize="?attr/dialogPreferredPadding"
+            android:layout_below="@+id/edit_mail_perfil"
+            android:layout_alignLeft="@+id/edit_mail_perfil"
+            android:layout_alignStart="@+id/edit_mail_perfil" />
 
         <EditText
             android:id="@+id/edit_contraseña_perfil"
             android:layout_width="270dp"
             android:layout_height="30dp"
-            android:layout_alignLeft="@+id/edit_mail_perfil"
-            android:layout_alignStart="@+id/edit_mail_perfil"
-            android:layout_below="@+id/txt_contraseña_perfil"
             android:background="@android:color/background_light"
             android:ems="10"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:layout_below="@+id/txt_contraseña_perfil"
+            android:layout_alignLeft="@+id/txt_contraseña_perfil"
+            android:layout_alignStart="@+id/txt_contraseña_perfil" />
 
         <TextView
             android:id="@+id/txt_conf_contrasenia_perfil"
@@ -148,24 +153,26 @@
             android:id="@+id/edit_conf_contrasenia_perfil"
             android:layout_width="270dp"
             android:layout_height="30dp"
-            android:layout_below="@+id/txt_conf_contrasenia_perfil"
-            android:layout_centerHorizontal="true"
             android:background="@android:color/background_light"
             android:ems="10"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:layout_marginBottom="132dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/txt_conf_contrasenia_perfil"
+            android:layout_alignStart="@+id/txt_conf_contrasenia_perfil" />
 
         <Button
             android:id="@+id/btn_registar_perfil"
             android:layout_width="270dp"
             android:layout_height="80dp"
-            android:layout_alignLeft="@+id/edit_contraseña_perfil"
-            android:layout_alignStart="@+id/edit_contraseña_perfil"
-            android:layout_below="@+id/edit_contraseña_perfil"
-            android:layout_marginTop="82dp"
             android:background="@color/colorPrimary"
             android:text="Registrar"
             android:textColor="@android:color/background_light"
-            android:textSize="?attr/dialogPreferredPadding" />
+            android:textSize="?attr/dialogPreferredPadding"
+            android:layout_marginTop="92dp"
+            android:layout_below="@+id/txt_conf_contrasenia_perfil"
+            android:layout_alignLeft="@+id/txt_conf_contrasenia_perfil"
+            android:layout_alignStart="@+id/txt_conf_contrasenia_perfil" />
 
     </RelativeLayout>
 

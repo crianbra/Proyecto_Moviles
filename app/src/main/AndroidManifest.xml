@@ -19,19 +19,17 @@
         <activity
             android:name=".CursosActivity"
             android:label="@string/title_activity_cursos"
-            android:theme="@style/AppTheme.NoActionBar" >
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
-        <activity android:name=".MatematicaActivity"></activity>
-
-
-
+        <activity android:name=".MatematicaActivity" />
+        <activity android:name=".FisicaActivity" />
+        <activity android:name=".AlgebraActivity" />
+        <activity android:name=".EstadisticaActivity"></activity>
     </application>
 
 </manifest>

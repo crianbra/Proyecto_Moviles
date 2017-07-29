@@ -1,5 +1,6 @@
 package com.example.crianbra.proyecto_moviles;
 
+import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Toast;
 import com.google.android.youtube.player.YouTubeBaseActivity;
@@ -11,21 +12,19 @@ import com.google.android.youtube.player.YouTubePlayer.PlayerStateChangeListener
 import com.google.android.youtube.player.YouTubePlayer.Provider;
 import com.google.android.youtube.player.YouTubePlayerView;
 
-
-public class MatematicaActivity extends YouTubeBaseActivity implements YouTubePlayer.OnInitializedListener {
+public class EstadisticaActivity extends YouTubeBaseActivity implements YouTubePlayer.OnInitializedListener {
 
     public static final String API_KEY = "AIzaSyB3Lo3FVWitwengnGYfvjscZiK5zh43AjA";
-    public static final String VIDEO_ID = "SYNCycRslPg";
+    public static final String VIDEO_ID = "Nlfk7kRz2uU";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_matematica);
+        setContentView(R.layout.activity_estadistica);
 
         /** Initializing YouTube Player View **/
-        YouTubePlayerView youTubePlayerView = (YouTubePlayerView) findViewById(R.id.youtube_player_matematicas);
+        YouTubePlayerView youTubePlayerView = (YouTubePlayerView) findViewById(R.id.youtube_player_estadistica);
         youTubePlayerView.initialize(API_KEY, this);
-
     }
 
     @Override
@@ -80,8 +79,4 @@ public class MatematicaActivity extends YouTubeBaseActivity implements YouTubePl
         public void onVideoStarted() {
         }
     };
-
-
-
-
 }

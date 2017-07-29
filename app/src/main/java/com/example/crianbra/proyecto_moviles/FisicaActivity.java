@@ -2,38 +2,33 @@ package com.example.crianbra.proyecto_moviles;
 
 import android.os.Bundle;
 import android.widget.Toast;
+
 import com.google.android.youtube.player.YouTubeBaseActivity;
 import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubePlayer;
-import com.google.android.youtube.player.YouTubePlayer.ErrorReason;
-import com.google.android.youtube.player.YouTubePlayer.PlaybackEventListener;
-import com.google.android.youtube.player.YouTubePlayer.PlayerStateChangeListener;
-import com.google.android.youtube.player.YouTubePlayer.Provider;
 import com.google.android.youtube.player.YouTubePlayerView;
 
-
-public class MatematicaActivity extends YouTubeBaseActivity implements YouTubePlayer.OnInitializedListener {
+public class FisicaActivity extends YouTubeBaseActivity implements YouTubePlayer.OnInitializedListener {
 
     public static final String API_KEY = "AIzaSyB3Lo3FVWitwengnGYfvjscZiK5zh43AjA";
-    public static final String VIDEO_ID = "SYNCycRslPg";
+    public static final String VIDEO_ID = "3I8sVqo07GM";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_matematica);
+        setContentView(R.layout.activity_fisica);
 
-        /** Initializing YouTube Player View **/
-        YouTubePlayerView youTubePlayerView = (YouTubePlayerView) findViewById(R.id.youtube_player_matematicas);
+        YouTubePlayerView youTubePlayerView = (YouTubePlayerView) findViewById(R.id.youtube_player_fisica);
         youTubePlayerView.initialize(API_KEY, this);
-
     }
 
+
     @Override
-    public void onInitializationFailure(Provider provider, YouTubeInitializationResult result) {
+    public void onInitializationFailure(YouTubePlayer.Provider provider, YouTubeInitializationResult result) {
         Toast.makeText(this, "Failured to Initialize!", Toast.LENGTH_LONG).show();
     }
     @Override
-    public void onInitializationSuccess(Provider provider, YouTubePlayer player, boolean wasRestored) {
+    public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer player, boolean wasRestored) {
 /** add listeners to YouTubePlayer instance **/
         player.setPlayerStateChangeListener(playerStateChangeListener);
         player.setPlaybackEventListener(playbackEventListener);
@@ -43,7 +38,7 @@ public class MatematicaActivity extends YouTubeBaseActivity implements YouTubePl
         }
     }
 
-    private PlaybackEventListener playbackEventListener = new PlaybackEventListener() {
+    private YouTubePlayer.PlaybackEventListener playbackEventListener = new YouTubePlayer.PlaybackEventListener() {
         @Override
         public void onBuffering(boolean arg0) {
         }
@@ -60,12 +55,12 @@ public class MatematicaActivity extends YouTubeBaseActivity implements YouTubePl
         public void onStopped() {
         }
     };
-    private PlayerStateChangeListener playerStateChangeListener = new PlayerStateChangeListener() {
+    private YouTubePlayer.PlayerStateChangeListener playerStateChangeListener = new YouTubePlayer.PlayerStateChangeListener() {
         @Override
         public void onAdStarted() {
         }
         @Override
-        public void onError(ErrorReason arg0) {
+        public void onError(YouTubePlayer.ErrorReason arg0) {
         }
         @Override
         public void onLoaded(String arg0) {
@@ -80,8 +75,4 @@ public class MatematicaActivity extends YouTubeBaseActivity implements YouTubePl
         public void onVideoStarted() {
         }
     };
-
-
-
-
 }

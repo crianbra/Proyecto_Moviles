@@ -40,13 +40,43 @@ public class CursosActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
 
-        final Button buttonLogin = (Button) findViewById(R.id.btn_curso_matematicas);
-        buttonLogin.setOnClickListener(new View.OnClickListener() {
+        final Button buttonMatematica = (Button) findViewById(R.id.btn_curso_matematicas);
+        buttonMatematica.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Log.d (tag,"Si llamo a la funcion");
                 Intent intent05 = new Intent(CursosActivity.this, MatematicaActivity.class);
                 startActivity(intent05);
+            }
+        });
+
+        final Button buttonFisica = (Button) findViewById(R.id.btn_curso_fisica);
+        buttonFisica.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d (tag,"Si llamo a la funcion");
+                Intent intent06 = new Intent(CursosActivity.this, FisicaActivity.class);
+                startActivity(intent06);
+            }
+        });
+
+        final Button buttonAlgebra = (Button) findViewById(R.id.btn_curso_algebra);
+        buttonAlgebra.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d (tag,"Si llamo a la funcion");
+                Intent intent07 = new Intent(CursosActivity.this, AlgebraActivity.class);
+                startActivity(intent07);
+            }
+        });
+
+        final Button buttonEstadistica= (Button) findViewById(R.id.btn_curso_estadistica);
+        buttonEstadistica.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d (tag,"Si llamo a la funcion");
+                Intent intent08 = new Intent(CursosActivity.this, EstadisticaActivity.class);
+                startActivity(intent08);
             }
         });
     }

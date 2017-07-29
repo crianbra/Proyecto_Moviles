@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context="com.example.crianbra.proyecto_moviles.FisicaActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/txt_fisica_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Física 1"
+            android:textColor="@color/colorPrimary"
+            android:textSize="?attr/listPreferredItemHeightSmall" />
+
+        <com.google.android.youtube.player.YouTubePlayerView
+            android:id="@+id/youtube_player_fisica"
+            android:layout_width="270dp"
+            android:layout_height="230dp"
+            android:layout_below="@+id/txt_fisica_1"
+            android:background="#fff"
+            android:layout_alignRight="@+id/texto_fisica"
+            android:layout_alignEnd="@+id/texto_fisica" />
+
+        <TextView
+            android:id="@+id/texto_fisica"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/youtube_player_fisica"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="29dp"
+            android:background="@color/colorPrimary"
+            android:text="La Física es una ciencia experimental básica cuyo desarrollo es importante para el sistema de ciencia y tecnología de cualquier país moderno, por lo que tiene una fuerte implantación en todos los sistemas universitarios de los países desarrollados."
+            android:textAlignment="gravity"
+            android:textColor="@android:color/background_light"
+            android:textSize="?attr/dialogPreferredPadding"
+            tools:layout_editor_absoluteX="69dp"
+            tools:layout_editor_absoluteY="304dp" />
+
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>
