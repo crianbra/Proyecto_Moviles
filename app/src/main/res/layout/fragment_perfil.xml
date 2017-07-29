@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorAccent"
+    android:background="@drawable/fondo"
     tools:context="com.example.crianbra.proyecto_moviles.PerfilFragment">
 
     <!-- TODO: Update blank fragment layout -->
@@ -15,16 +15,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-     <!--   <TextView
-            android:id="@+id/txt_perfil"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Mi Perfil"
-            android:textColor="@color/colorPrimary"
-            android:textSize="?attr/actionBarSize"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="14dp" /> -->
 
         <TextView
             android:id="@+id/txt_nombre_perfil"
@@ -34,7 +24,6 @@
             android:textColor="@color/colorPrimary"
             android:textSize="?attr/dialogPreferredPadding"
             android:layout_marginTop="11dp"
-            android:layout_below="@+id/edit_dire_perfil"
             android:layout_alignLeft="@+id/edit_nombre_perfil"
             android:layout_alignStart="@+id/edit_nombre_perfil" />
 
@@ -46,8 +35,8 @@
             android:ems="10"
             android:inputType="textPersonName"
             android:layout_below="@+id/txt_nombre_perfil"
-            android:layout_alignLeft="@+id/edit_dire_perfil"
-            android:layout_alignStart="@+id/edit_dire_perfil" />
+            android:layout_alignLeft="@+id/edit_mail_perfil"
+            android:layout_alignStart="@+id/edit_mail_perfil" />
 
         <TextView
             android:id="@+id/txt_colegio_perfil"
@@ -83,16 +72,15 @@
             android:layout_alignStart="@+id/edit_colegio_perfil" />
 
         <EditText
-            android:id="@+id/edit_dire_perfil"
+            android:id="@+id/edit_ciudad_perfil"
             android:layout_width="270dp"
             android:layout_height="30dp"
+            android:layout_alignLeft="@+id/txt_mail_perfil"
+            android:layout_alignStart="@+id/txt_mail_perfil"
+            android:layout_below="@+id/txt_dire_perfil"
             android:background="@android:color/background_light"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:layout_above="@+id/edit_conf_contrasenia_perfil"
-            android:layout_alignLeft="@+id/edit_mail_perfil"
-            android:layout_alignStart="@+id/edit_mail_perfil"
-            android:layout_marginBottom="144dp" />
+            android:inputType="textPersonName" />
 
         <TextView
             android:id="@+id/txt_mail_perfil"
@@ -148,31 +136,42 @@
             android:layout_below="@+id/edit_contraseña_perfil"
             android:layout_alignLeft="@+id/edit_contraseña_perfil"
             android:layout_alignStart="@+id/edit_contraseña_perfil" />
-
         <EditText
             android:id="@+id/edit_conf_contrasenia_perfil"
             android:layout_width="270dp"
             android:layout_height="30dp"
+            android:layout_alignLeft="@+id/txt_conf_contrasenia_perfil"
+            android:layout_alignStart="@+id/txt_conf_contrasenia_perfil"
+            android:layout_below="@+id/txt_conf_contrasenia_perfil"
             android:background="@android:color/background_light"
             android:ems="10"
-            android:inputType="textPassword"
-            android:layout_marginBottom="132dp"
-            android:layout_alignParentBottom="true"
-            android:layout_alignLeft="@+id/txt_conf_contrasenia_perfil"
-            android:layout_alignStart="@+id/txt_conf_contrasenia_perfil" />
+            android:inputType="textPassword" />
 
         <Button
-            android:id="@+id/btn_registar_perfil"
-            android:layout_width="270dp"
+            android:id="@+id/btn_editar"
+            android:layout_width="130dp"
             android:layout_height="80dp"
+            android:layout_alignLeft="@+id/edit_conf_contrasenia_perfil"
+            android:layout_alignStart="@+id/edit_conf_contrasenia_perfil"
+            android:layout_below="@+id/edit_conf_contrasenia_perfil"
+            android:layout_marginTop="14dp"
             android:background="@color/colorPrimary"
-            android:text="Registrar"
+            android:text="Editar"
             android:textColor="@android:color/background_light"
-            android:textSize="?attr/dialogPreferredPadding"
-            android:layout_marginTop="92dp"
-            android:layout_below="@+id/txt_conf_contrasenia_perfil"
-            android:layout_alignLeft="@+id/txt_conf_contrasenia_perfil"
-            android:layout_alignStart="@+id/txt_conf_contrasenia_perfil" />
+            android:textSize="?attr/dialogPreferredPadding" />
+
+        <Button
+            android:id="@+id/btn_cancelar"
+            android:layout_width="130dp"
+            android:layout_height="80dp"
+            android:layout_alignEnd="@+id/edit_conf_contrasenia_perfil"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/edit_conf_contrasenia_perfil"
+            android:background="@color/colorPrimary"
+            android:text="Cancelar"
+            android:textColor="@android:color/background_light"
+            android:textSize="?attr/dialogPreferredPadding" />
+
 
     </RelativeLayout>
 
