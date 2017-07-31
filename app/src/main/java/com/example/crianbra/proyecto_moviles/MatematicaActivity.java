@@ -1,6 +1,11 @@
 package com.example.crianbra.proyecto_moviles;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Toast;
 import com.google.android.youtube.player.YouTubeBaseActivity;
 import com.google.android.youtube.player.YouTubeInitializationResult;
@@ -14,6 +19,8 @@ import com.google.android.youtube.player.YouTubePlayerView;
 
 public class MatematicaActivity extends YouTubeBaseActivity implements YouTubePlayer.OnInitializedListener {
 
+    String tag = "Lifecycle";
+
     public static final String API_KEY = "AIzaSyB3Lo3FVWitwengnGYfvjscZiK5zh43AjA";
     public static final String VIDEO_ID = "SYNCycRslPg";
 
@@ -25,6 +32,16 @@ public class MatematicaActivity extends YouTubeBaseActivity implements YouTubePl
         /** Initializing YouTube Player View **/
         YouTubePlayerView youTubePlayerView = (YouTubePlayerView) findViewById(R.id.youtube_player_matematicas);
         youTubePlayerView.initialize(API_KEY, this);
+
+        final ImageButton buttonSiguiente = (ImageButton) findViewById(R.id.btn_flecha_matematica);
+        buttonSiguiente.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d (tag,"Si llamo a la funcion");
+                Intent intent09 = new Intent(MatematicaActivity.this, Matematica2Activity.class);
+                startActivity(intent09);
+            }
+        });
 
     }
 

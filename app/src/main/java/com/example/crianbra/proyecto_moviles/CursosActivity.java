@@ -22,11 +22,14 @@ public class CursosActivity extends AppCompatActivity
 
     String tag = "Lifecycle";
 
+    Activity activity = null;
+    Boolean activitySeleccionado = false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cursos);
-
+        
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -101,8 +104,6 @@ public class CursosActivity extends AppCompatActivity
         Fragment fragment = null;
         Boolean fragmentoSeleccionado = false;
 
-        Activity activity = null;
-        Boolean activitySeleccionado = false;
 
         if (id == R.id.nav_camera) {
             fragment = new PerfilFragment();
@@ -115,9 +116,6 @@ public class CursosActivity extends AppCompatActivity
         } else if (id == R.id.nav_send) {
 
             //finish();
-            activity = new MainActivity();
-            activitySeleccionado = true;
-
         }
 
         if (fragmentoSeleccionado){
