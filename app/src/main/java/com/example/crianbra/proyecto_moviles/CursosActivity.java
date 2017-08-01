@@ -108,10 +108,12 @@ public class CursosActivity extends AppCompatActivity
         if (id == R.id.nav_camera) {
             fragment = new PerfilFragment();
             fragmentoSeleccionado = true;
+            setTitle("Mi Perfil");
 
         } else if (id == R.id.nav_gallery) {
             fragment = new MicursosFragment();
             fragmentoSeleccionado = true;
+            setTitle("Mis Cursos");
 
         } else if (id == R.id.nav_send) {
 
@@ -126,8 +128,8 @@ public class CursosActivity extends AppCompatActivity
             getSupportFragmentManager().beginTransaction().replace(R.id.Contenedor, fragment).addToBackStack("xxx").commit();
 
 
-            item.setChecked(true);
-            getSupportActionBar().setTitle(item.getTitle());
+            //item.setChecked(true);
+            //getSupportActionBar().setTitle(item.getTitle());
 
         }
 

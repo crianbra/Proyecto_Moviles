@@ -30,12 +30,12 @@
 
             <com.google.android.youtube.player.YouTubePlayerView
                 android:id="@+id/youtube_player_algebra"
-                android:layout_width="270dp"
-                android:layout_height="230dp"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
                 android:background="#fff"
                 android:layout_below="@+id/txt_algebra_1"
-                android:layout_alignRight="@+id/texto_algebra"
-                android:layout_alignEnd="@+id/texto_algebra" />
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
 
             <TextView
                 android:id="@+id/texto_algebra"
