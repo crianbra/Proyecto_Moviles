@@ -2,6 +2,7 @@ package com.example.crianbra.proyecto_moviles;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -15,6 +16,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class CursosActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener , PerfilFragment.OnFragmentInteractionListener,
@@ -29,6 +31,10 @@ public class CursosActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cursos);
+
+        String carpetaFuente = "fonts/galette-med.otf";
+
+        Typeface fuenteCursos = Typeface.createFromAsset(getAssets(), carpetaFuente);
         
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -44,6 +50,7 @@ public class CursosActivity extends AppCompatActivity
 
 
         final Button buttonMatematica = (Button) findViewById(R.id.btn_curso_matematicas);
+        buttonMatematica.setTypeface(fuenteCursos);
         buttonMatematica.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -54,6 +61,7 @@ public class CursosActivity extends AppCompatActivity
         });
 
         final Button buttonFisica = (Button) findViewById(R.id.btn_curso_fisica);
+        buttonFisica.setTypeface(fuenteCursos);
         buttonFisica.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -64,6 +72,7 @@ public class CursosActivity extends AppCompatActivity
         });
 
         final Button buttonAlgebra = (Button) findViewById(R.id.btn_curso_algebra);
+        buttonAlgebra.setTypeface(fuenteCursos);
         buttonAlgebra.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -74,6 +83,7 @@ public class CursosActivity extends AppCompatActivity
         });
 
         final Button buttonEstadistica= (Button) findViewById(R.id.btn_curso_estadistica);
+        buttonEstadistica.setTypeface(fuenteCursos);
         buttonEstadistica.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

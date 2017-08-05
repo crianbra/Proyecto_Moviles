@@ -1,7 +1,9 @@
 package com.example.crianbra.proyecto_moviles;
 
+import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.TextView;
 import android.widget.Toast;
 import com.google.android.youtube.player.YouTubeBaseActivity;
 import com.google.android.youtube.player.YouTubeInitializationResult;
@@ -21,6 +23,13 @@ public class EstadisticaActivity extends YouTubeBaseActivity implements YouTubeP
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_estadistica);
+
+        String carpetaFuente = "fonts/galette-med.otf";
+        Typeface fuenteEstadistica = Typeface.createFromAsset(getAssets(), carpetaFuente);
+        TextView txt_estadistica = (TextView)findViewById(R.id.txt_estadistica_1);
+        TextView txt_estadisticas_texto = (TextView)findViewById(R.id.texto_estadistica);
+        txt_estadistica.setTypeface(fuenteEstadistica);
+        txt_estadisticas_texto.setTypeface(fuenteEstadistica);
 
         /** Initializing YouTube Player View **/
         YouTubePlayerView youTubePlayerView = (YouTubePlayerView) findViewById(R.id.youtube_player_estadistica);

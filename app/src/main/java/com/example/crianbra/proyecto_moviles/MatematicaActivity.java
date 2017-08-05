@@ -1,11 +1,13 @@
 package com.example.crianbra.proyecto_moviles;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.TextView;
 import android.widget.Toast;
 import com.google.android.youtube.player.YouTubeBaseActivity;
 import com.google.android.youtube.player.YouTubeInitializationResult;
@@ -28,6 +30,13 @@ public class MatematicaActivity extends YouTubeBaseActivity implements YouTubePl
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_matematica);
+
+        String carpetaFuente = "fonts/galette-med.otf";
+        Typeface fuenteMatematica = Typeface.createFromAsset(getAssets(), carpetaFuente);
+        TextView txt_matematicas = (TextView)findViewById(R.id.txt_matematicas_1);
+        TextView txt_matematicas_texto = (TextView)findViewById(R.id.texto_matematica);
+        txt_matematicas.setTypeface(fuenteMatematica);
+        txt_matematicas_texto.setTypeface(fuenteMatematica);
 
         /** Initializing YouTube Player View **/
         YouTubePlayerView youTubePlayerView = (YouTubePlayerView) findViewById(R.id.youtube_player_matematicas);

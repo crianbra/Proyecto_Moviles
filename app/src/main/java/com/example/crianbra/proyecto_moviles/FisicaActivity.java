@@ -1,6 +1,8 @@
 package com.example.crianbra.proyecto_moviles;
 
+import android.graphics.Typeface;
 import android.os.Bundle;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.youtube.player.YouTubeBaseActivity;
@@ -17,6 +19,13 @@ public class FisicaActivity extends YouTubeBaseActivity implements YouTubePlayer
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fisica);
+
+        String carpetaFuente = "fonts/galette-med.otf";
+        Typeface fuenteFisica = Typeface.createFromAsset(getAssets(), carpetaFuente);
+        TextView txt_fisica = (TextView)findViewById(R.id.txt_fisica_1);
+        TextView txt_fisica_texto = (TextView)findViewById(R.id.texto_fisica);
+        txt_fisica.setTypeface(fuenteFisica);
+        txt_fisica_texto.setTypeface(fuenteFisica);
 
         YouTubePlayerView youTubePlayerView = (YouTubePlayerView) findViewById(R.id.youtube_player_fisica);
         youTubePlayerView.initialize(API_KEY, this);

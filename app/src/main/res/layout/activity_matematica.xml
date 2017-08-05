@@ -34,10 +34,9 @@
             android:layout_below="@+id/youtube_player_matematicas"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="13dp"
-            android:background="@color/colorPrimary"
             android:text="El objetivo inicial de esta asignatura es conseguir que los estudiantes de primer curso se hagan con los procedimientos prácticos básicos, que permiten la adaptación del estudio de las Matemáticas, en la Universidad."
             android:textAlignment="gravity"
-            android:textColor="@android:color/background_light"
+            android:textColor="@color/colorPrimary"
             android:textSize="?attr/dialogPreferredPadding" />
 
         <com.google.android.youtube.player.YouTubePlayerView
