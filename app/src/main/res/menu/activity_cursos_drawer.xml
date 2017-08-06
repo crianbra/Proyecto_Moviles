@@ -4,22 +4,17 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_camera"
-            android:icon="@mipmap/logo_mini"
+            android:icon="@mipmap/user"
             android:title="Mi Perfil" />
         <item
             android:id="@+id/nav_gallery"
-            android:icon="@mipmap/logo_mini"
+            android:icon="@mipmap/curso"
             android:title="Mis Cursos" />
+        <item
+            android:id="@+id/nav_send"
+            android:icon="@mipmap/cerrar"
+            android:title="Cerrar Sesión" />
 
     </group>
-
-    <item android:title="">
-        <menu>
-                        <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Cerrar Sesión" />
-        </menu>
-    </item>
 
 </menu>

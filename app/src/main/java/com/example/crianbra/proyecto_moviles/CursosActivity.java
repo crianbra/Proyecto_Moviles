@@ -24,16 +24,12 @@ public class CursosActivity extends AppCompatActivity
 
     String tag = "Lifecycle";
 
-    Activity activity = null;
-    Boolean activitySeleccionado = false;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cursos);
 
         String carpetaFuente = "fonts/galette-med.otf";
-
         Typeface fuenteCursos = Typeface.createFromAsset(getAssets(), carpetaFuente);
         
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -114,8 +110,12 @@ public class CursosActivity extends AppCompatActivity
         Fragment fragment = null;
         Boolean fragmentoSeleccionado = false;
 
+        String carpetaFuente = "fonts/galette-med.otf";
+        Typeface fuenteCursos1 = Typeface.createFromAsset(getAssets(), carpetaFuente);
+
 
         if (id == R.id.nav_camera) {
+
             fragment = new PerfilFragment();
             fragmentoSeleccionado = true;
             setTitle("Mi Perfil");
