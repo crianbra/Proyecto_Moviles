@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.design.internal.NavigationMenuItemView;
 import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.View;
@@ -110,9 +111,10 @@ public class CursosActivity extends AppCompatActivity
         Fragment fragment = null;
         Boolean fragmentoSeleccionado = false;
 
-        String carpetaFuente = "fonts/galette-med.otf";
+        /*String carpetaFuente = "fonts/galette-med.otf";
         Typeface fuenteCursos1 = Typeface.createFromAsset(getAssets(), carpetaFuente);
-
+        NavigationMenuItemView perfil = (NavigationMenuItemView) findViewById(R.id.nav_camera);
+        perfil.setTypeface(fuenteCursos1);*/
 
         if (id == R.id.nav_camera) {
 
@@ -123,7 +125,7 @@ public class CursosActivity extends AppCompatActivity
         } else if (id == R.id.nav_gallery) {
             fragment = new MicursosFragment();
             fragmentoSeleccionado = true;
-            setTitle("Mis Cursos");
+            //setTitle("Mis Cursos");
 
         } else if (id == R.id.nav_send) {
 
