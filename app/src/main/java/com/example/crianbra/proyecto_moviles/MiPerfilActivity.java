@@ -4,6 +4,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Typeface;
 import android.net.Uri;
 import android.provider.MediaStore;
 import android.support.v7.app.AlertDialog;
@@ -12,6 +13,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class MiPerfilActivity extends AppCompatActivity {
 
@@ -29,8 +31,32 @@ public class MiPerfilActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mi_perfil);
 
+        String carpetaFuente = "fonts/galette-med.otf";
+        Typeface fuentePerfil = Typeface.createFromAsset(getAssets(), carpetaFuente);
+
+        TextView nombre_perfil = (TextView) findViewById(R.id.txt_nombre_perfil);
+        TextView colegio_perfil = (TextView) findViewById(R.id.txt_colegio_perfil);
+        TextView ciudad_perfil = (TextView) findViewById(R.id.txt_dire_perfil);
+        TextView mail_perfil = (TextView) findViewById(R.id.txt_mail_perfil);
+        TextView contrasenia_perfil = (TextView) findViewById(R.id.txt_contraseña_perfil);
+        TextView contrasenia_conf_perfil = (TextView) findViewById(R.id.txt_conf_contrasenia_perfil);
+        Button btn_guardar = (Button)findViewById(R.id.btn_guardar);
+        Button btn_cancelar = (Button)findViewById(R.id.btn_cancelar);
+
+        nombre_perfil.setTypeface(fuentePerfil);
+        colegio_perfil.setTypeface(fuentePerfil);
+        ciudad_perfil.setTypeface(fuentePerfil);
+        mail_perfil.setTypeface(fuentePerfil);
+        contrasenia_perfil.setTypeface(fuentePerfil);
+        contrasenia_conf_perfil.setTypeface(fuentePerfil);
+        btn_guardar.setTypeface(fuentePerfil);
+        btn_cancelar.setTypeface(fuentePerfil);
+
+
+
         image = (ImageView)findViewById(R.id.imagePerfil);
         Button boton = (Button)findViewById(R.id.btn_foto);
+        boton.setTypeface(fuentePerfil);
 
         boton.setOnClickListener(new View.OnClickListener() {
             @Override
