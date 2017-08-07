@@ -19,7 +19,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class CursosActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener , PerfilFragment.OnFragmentInteractionListener,
+        implements NavigationView.OnNavigationItemSelectedListener ,
         MicursosFragment.OnFragmentInteractionListener{
 
     String tag = "Lifecycle";
@@ -116,9 +116,9 @@ public class CursosActivity extends AppCompatActivity
 
         if (id == R.id.nav_camera) {
 
-            fragment = new PerfilFragment();
-            fragmentoSeleccionado = true;
-            setTitle("Mi Perfil");
+            Intent i = new Intent(CursosActivity.this, MiPerfilActivity.class);
+            startActivity(i);
+            //setTitle("Mi Perfil");
 
         } else if (id == R.id.nav_gallery) {
             fragment = new MicursosFragment();
@@ -136,7 +136,7 @@ public class CursosActivity extends AppCompatActivity
 
         if (fragmentoSeleccionado){
             getSupportFragmentManager().beginTransaction().replace(R.id.Contenedor, fragment).addToBackStack("xxx").commit();
-
+            
 
             //item.setChecked(true);
             //getSupportActionBar().setTitle(item.getTitle());

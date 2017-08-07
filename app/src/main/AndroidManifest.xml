@@ -30,7 +30,8 @@
         <activity android:name=".FisicaActivity" />
         <activity android:name=".AlgebraActivity" />
         <activity android:name=".EstadisticaActivity" />
-        <activity android:name=".Matematica2Activity"></activity>
+        <activity android:name=".Matematica2Activity" />
+        <activity android:name=".MiPerfilActivity"></activity>
     </application>
 
 </manifest>
