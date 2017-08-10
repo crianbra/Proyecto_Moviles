@@ -129,10 +129,8 @@ public class CursosActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_send) {
 
-            Intent intent010 = new Intent(Intent.ACTION_MAIN);
-            intent010.addCategory(Intent.CATEGORY_HOME);
-            intent010.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            startActivity(intent010);
+            Intent i = new Intent(CursosActivity.this, MainActivity.class);
+            startActivity(i);
             //finish();
         }
 

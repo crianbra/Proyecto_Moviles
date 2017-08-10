@@ -16,4 +16,5 @@
     <string name="login_usuario">Usuario</string>
     <string name="login_contraseña">Contraseña</string>
     <string name="btn_ingresar">Ingresar</string>
+
 </resources>

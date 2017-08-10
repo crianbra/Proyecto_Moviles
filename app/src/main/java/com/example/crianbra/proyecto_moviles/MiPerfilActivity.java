@@ -10,10 +10,12 @@ import android.provider.MediaStore;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MiPerfilActivity extends AppCompatActivity {
 
@@ -25,6 +27,7 @@ public class MiPerfilActivity extends AppCompatActivity {
     private final int SELECT_PICTURE = 200;
 
     private ImageView image;
+    String tag = "Lifecycle";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,6 +81,30 @@ public class MiPerfilActivity extends AppCompatActivity {
                 });
                 builder.show();
 
+            }
+        });
+
+        final Button buttonGuardar = (Button) findViewById(R.id.btn_guardar);
+        buttonGuardar.setTypeface(fuentePerfil);
+        buttonGuardar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d (tag,"Si llamo a la funcion");
+                Toast.makeText(getApplicationContext(), "Se Guardo correctamente", Toast.LENGTH_SHORT).show();
+                Intent intent05 = new Intent(MiPerfilActivity.this, CursosActivity.class);
+                startActivity(intent05);
+            }
+        });
+
+        final Button buttonCancelar = (Button) findViewById(R.id.btn_cancelar);
+        buttonCancelar.setTypeface(fuentePerfil);
+        buttonCancelar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d (tag,"Si llamo a la funcion");
+                Toast.makeText(getApplicationContext(), "Se Cancelo correctamente", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MiPerfilActivity.this, CursosActivity.class);
+                startActivity(intent);
             }
         });
     }

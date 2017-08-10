@@ -12,10 +12,11 @@ import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
+
 
 public class MainActivity extends AppCompatActivity
 implements NavigationView.OnNavigationItemSelectedListener{
-
 
     String tag = "Lifecycle";
 
@@ -49,11 +50,14 @@ implements NavigationView.OnNavigationItemSelectedListener{
                 startActivity(intent02);
             }
         });
+
     }
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         return false;
     }
+
+
 
 }

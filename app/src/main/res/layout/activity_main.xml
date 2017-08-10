@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/fondo"
     tools:context="com.example.crianbra.proyecto_moviles.MainActivity">
 
@@ -47,5 +48,7 @@
             android:layout_below="@+id/btn_inicio"
             android:layout_alignLeft="@+id/btn_inicio"
             android:layout_alignStart="@+id/btn_inicio" />
+
+
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>
