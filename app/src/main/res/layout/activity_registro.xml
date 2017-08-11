@@ -155,7 +155,7 @@
 
             <Button
                 android:id="@+id/btn_registar"
-                android:layout_width="match_parent"
+                android:layout_width="270dp"
                 android:layout_height="80dp"
                 android:layout_marginTop="82dp"
                 android:background="@color/colorPrimary"

@@ -22,7 +22,7 @@
 
         <Button
             android:id="@+id/btn_curso_matematicas"
-            android:layout_width="match_parent"
+            android:layout_width="270dp"
             android:layout_height="80dp"
             android:layout_marginTop="32dp"
             android:background="@color/colorPrimary"
@@ -33,7 +33,7 @@
 
         <Button
             android:id="@+id/btn_curso_fisica"
-            android:layout_width="match_parent"
+            android:layout_width="270dp"
             android:layout_height="80dp"
             android:layout_alignLeft="@+id/btn_curso_matematicas"
             android:layout_alignStart="@+id/btn_curso_matematicas"
@@ -46,7 +46,7 @@
 
         <Button
             android:id="@+id/btn_curso_algebra"
-            android:layout_width="match_parent"
+            android:layout_width="270dp"
             android:layout_height="80dp"
             android:layout_alignLeft="@+id/btn_curso_fisica"
             android:layout_alignStart="@+id/btn_curso_fisica"
@@ -59,7 +59,7 @@
 
         <Button
             android:id="@+id/btn_curso_estadistica"
-            android:layout_width="match_parent"
+            android:layout_width="270dp"
             android:layout_height="80dp"
             android:background="@color/colorPrimary"
             android:text="Estadística 1"
