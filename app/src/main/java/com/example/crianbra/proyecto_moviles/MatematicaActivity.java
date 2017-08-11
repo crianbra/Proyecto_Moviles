@@ -43,14 +43,14 @@ public class MatematicaActivity extends YouTubeBaseActivity implements YouTubePl
         youTubePlayerView.initialize(API_KEY, this);
 
 
-        final Button buttonMatematica = (Button) findViewById(R.id.btn_registro);
+        final Button buttonMatematica = (Button) findViewById(R.id.btn_siguiente);
         buttonMatematica.setTypeface(fuenteMatematica);
         buttonMatematica.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Log.d (tag,"Si llamo a la funcion");
-                Intent intent02 = new Intent(MatematicaActivity.this, Matematica2Activity.class);
-                startActivity(intent02);
+                Intent intent = new Intent(MatematicaActivity.this, Matematica2Activity.class);
+                startActivity(intent);
             }
         });
 

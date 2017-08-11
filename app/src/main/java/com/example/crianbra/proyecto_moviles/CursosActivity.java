@@ -136,7 +136,6 @@ public class CursosActivity extends AppCompatActivity
 
         if (fragmentoSeleccionado){
             getSupportFragmentManager().beginTransaction().replace(R.id.Contenedor, fragment).addToBackStack("xxx").commit();
-            
 
             //item.setChecked(true);
             //getSupportActionBar().setTitle(item.getTitle());

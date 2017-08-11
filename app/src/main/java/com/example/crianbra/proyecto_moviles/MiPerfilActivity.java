@@ -56,7 +56,6 @@ public class MiPerfilActivity extends AppCompatActivity {
         btn_cancelar.setTypeface(fuentePerfil);
 
 
-
         image = (ImageView)findViewById(R.id.imagePerfil);
         Button boton = (Button)findViewById(R.id.btn_foto);
         boton.setTypeface(fuentePerfil);

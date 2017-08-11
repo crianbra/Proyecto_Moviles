@@ -39,18 +39,17 @@
 
             <TextView
                 android:id="@+id/texto_algebra"
-                android:layout_width="270dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/colorPrimary"
+                android:layout_below="@+id/youtube_player_algebra"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
                 android:text="Desarrollar las capacidades analíticas y el pensamiento lógico riguroso a través del estudio del álgebra lineal. Asimilar o manejar con fluidez los principales conceptos del álgebra lineal: espacios vectoriales, aplicaciones lineales, matrices, determinantes y sistemas de ecuaciones."
                 android:textAlignment="gravity"
-                android:textColor="@android:color/background_light"
+                android:textColor="@color/colorPrimary"
                 android:textSize="?attr/dialogPreferredPadding"
                 tools:layout_editor_absoluteX="57dp"
-                tools:layout_editor_absoluteY="275dp"
-                android:layout_marginTop="30dp"
-                android:layout_below="@+id/youtube_player_algebra"
-                android:layout_centerHorizontal="true" />
+                tools:layout_editor_absoluteY="275dp" />
 
 
         </RelativeLayout>
