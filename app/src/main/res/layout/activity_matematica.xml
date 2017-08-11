@@ -31,7 +31,7 @@
 
         <TextView
             android:id="@+id/texto_matematica"
-            android:layout_width="270dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/youtube_player_matematicas"
             android:layout_centerHorizontal="true"
@@ -47,9 +47,22 @@
             android:layout_height="250dp"
             android:background="#fff"
             android:layout_below="@+id/txt_matematicas_1"
-            android:layout_toStartOf="@+id/btn_flecha_matematica"
+            android:layout_toStartOf="@+id/texto_matematica"
             android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
+            android:layout_alignParentEnd="true"
+            android:layout_toLeftOf="@+id/texto_matematica" />
+
+        <Button
+            android:id="@+id/btn_siguiente"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@+id/texto_matematica"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="34dp"
+            android:background="@color/colorPrimary"
+            android:text="Siguiente"
+            android:textColor="@android:color/background_light"
+            android:textSize="?attr/dialogPreferredPadding" />
 
 
     </RelativeLayout>

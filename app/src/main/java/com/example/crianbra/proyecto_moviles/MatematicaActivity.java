@@ -41,7 +41,18 @@ public class MatematicaActivity extends YouTubeBaseActivity implements YouTubePl
         /** Initializing YouTube Player View **/
         YouTubePlayerView youTubePlayerView = (YouTubePlayerView) findViewById(R.id.youtube_player_matematicas);
         youTubePlayerView.initialize(API_KEY, this);
-        
+
+
+        final Button buttonMatematica = (Button) findViewById(R.id.btn_registro);
+        buttonMatematica.setTypeface(fuenteMatematica);
+        buttonMatematica.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d (tag,"Si llamo a la funcion");
+                Intent intent02 = new Intent(MatematicaActivity.this, Matematica2Activity.class);
+                startActivity(intent02);
+            }
+        });
 
     }
 

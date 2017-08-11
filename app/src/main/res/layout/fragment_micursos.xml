@@ -13,12 +13,5 @@
         android:layout_height="match_parent">
 
 
-        <ListView
-            android:layout_width="270dp"
-            android:layout_height="350dp"
-            android:background="@android:color/background_light"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="57dp" />
     </RelativeLayout>
 </FrameLayout>
