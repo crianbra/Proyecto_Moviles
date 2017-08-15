@@ -1,4 +1,4 @@
-package com.example.crianbra.proyecto_moviles;
+package app.proyecto.crianbra.proyecto_moviles;
 
 import android.content.Context;
 import android.net.Uri;
@@ -64,7 +64,7 @@ public class MicursosFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_micursos, container, false);
+        return inflater.inflate(app.example.crianbra.proyecto_moviles.R.layout.fragment_micursos, container, false);
     }
 
     // TODO: Rename method, update argument and hook method into UI event

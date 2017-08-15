@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     xmlns:facebook="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/fondo"
-    tools:context="com.example.crianbra.proyecto_moviles.MainActivity">
+    tools:context="com.example.crianbra.proyecto_moviles.app.example.crianbra.proyecto_moviles.MainActivity">
 
 
     <RelativeLayout

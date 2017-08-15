@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo"
-    tools:context="com.example.crianbra.proyecto_moviles.MatematicaActivity">
+    tools:context="com.example.crianbra.proyecto_moviles.app.example.crianbra.proyecto_moviles.MatematicaActivity">
 
     <ScrollView
         android:layout_width="match_parent"

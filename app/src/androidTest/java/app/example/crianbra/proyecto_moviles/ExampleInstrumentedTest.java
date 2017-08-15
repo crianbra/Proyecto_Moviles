@@ -1,4 +1,4 @@
-package com.example.crianbra.proyecto_moviles;
+package app.example.crianbra.proyecto_moviles;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

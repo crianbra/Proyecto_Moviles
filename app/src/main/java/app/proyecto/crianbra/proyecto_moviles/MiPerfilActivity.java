@@ -1,4 +1,4 @@
-package com.example.crianbra.proyecto_moviles;
+package app.proyecto.crianbra.proyecto_moviles;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -32,19 +32,19 @@ public class MiPerfilActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mi_perfil);
+        setContentView(app.example.crianbra.proyecto_moviles.R.layout.activity_mi_perfil);
 
         String carpetaFuente = "fonts/galette-med.otf";
         Typeface fuentePerfil = Typeface.createFromAsset(getAssets(), carpetaFuente);
 
-        TextView nombre_perfil = (TextView) findViewById(R.id.txt_nombre_perfil);
-        TextView colegio_perfil = (TextView) findViewById(R.id.txt_colegio_perfil);
-        TextView ciudad_perfil = (TextView) findViewById(R.id.txt_dire_perfil);
-        TextView mail_perfil = (TextView) findViewById(R.id.txt_mail_perfil);
-        TextView contrasenia_perfil = (TextView) findViewById(R.id.txt_contraseña_perfil);
-        TextView contrasenia_conf_perfil = (TextView) findViewById(R.id.txt_conf_contrasenia_perfil);
-        Button btn_guardar = (Button)findViewById(R.id.btn_guardar);
-        Button btn_cancelar = (Button)findViewById(R.id.btn_cancelar);
+        TextView nombre_perfil = (TextView) findViewById(app.example.crianbra.proyecto_moviles.R.id.txt_nombre_perfil);
+        TextView colegio_perfil = (TextView) findViewById(app.example.crianbra.proyecto_moviles.R.id.txt_colegio_perfil);
+        TextView ciudad_perfil = (TextView) findViewById(app.example.crianbra.proyecto_moviles.R.id.txt_dire_perfil);
+        TextView mail_perfil = (TextView) findViewById(app.example.crianbra.proyecto_moviles.R.id.txt_mail_perfil);
+        TextView contrasenia_perfil = (TextView) findViewById(app.example.crianbra.proyecto_moviles.R.id.txt_contraseña_perfil);
+        TextView contrasenia_conf_perfil = (TextView) findViewById(app.example.crianbra.proyecto_moviles.R.id.txt_conf_contrasenia_perfil);
+        Button btn_guardar = (Button)findViewById(app.example.crianbra.proyecto_moviles.R.id.btn_guardar);
+        Button btn_cancelar = (Button)findViewById(app.example.crianbra.proyecto_moviles.R.id.btn_cancelar);
 
         nombre_perfil.setTypeface(fuentePerfil);
         colegio_perfil.setTypeface(fuentePerfil);
@@ -56,8 +56,8 @@ public class MiPerfilActivity extends AppCompatActivity {
         btn_cancelar.setTypeface(fuentePerfil);
 
 
-        image = (ImageView)findViewById(R.id.imagePerfil);
-        Button boton = (Button)findViewById(R.id.btn_foto);
+        image = (ImageView)findViewById(app.example.crianbra.proyecto_moviles.R.id.imagePerfil);
+        Button boton = (Button)findViewById(app.example.crianbra.proyecto_moviles.R.id.btn_foto);
         boton.setTypeface(fuentePerfil);
 
         boton.setOnClickListener(new View.OnClickListener() {
@@ -83,7 +83,7 @@ public class MiPerfilActivity extends AppCompatActivity {
             }
         });
 
-        final Button buttonGuardar = (Button) findViewById(R.id.btn_guardar);
+        final Button buttonGuardar = (Button) findViewById(app.example.crianbra.proyecto_moviles.R.id.btn_guardar);
         buttonGuardar.setTypeface(fuentePerfil);
         buttonGuardar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -95,7 +95,7 @@ public class MiPerfilActivity extends AppCompatActivity {
             }
         });
 
-        final Button buttonCancelar = (Button) findViewById(R.id.btn_cancelar);
+        final Button buttonCancelar = (Button) findViewById(app.example.crianbra.proyecto_moviles.R.id.btn_cancelar);
         buttonCancelar.setTypeface(fuentePerfil);
         buttonCancelar.setOnClickListener(new View.OnClickListener() {
             @Override

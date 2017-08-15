@@ -1,4 +1,4 @@
-package com.example.crianbra.proyecto_moviles;
+package app.proyecto.crianbra.proyecto_moviles;
 
 import android.content.Intent;
 import android.graphics.Typeface;
@@ -17,16 +17,16 @@ public class Matematica2Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_matematica2);
+        setContentView(app.example.crianbra.proyecto_moviles.R.layout.activity_matematica2);
 
         String carpetaFuente = "fonts/galette-med.otf";
         Typeface fuenteMatematicas2 = Typeface.createFromAsset(getAssets(), carpetaFuente);
-        TextView txt_mate2 = (TextView)findViewById(R.id.txt_felicidades);
-        TextView txt_mate2_texto = (TextView)findViewById(R.id.txt_texto_felicidades);
+        TextView txt_mate2 = (TextView)findViewById(app.example.crianbra.proyecto_moviles.R.id.txt_felicidades);
+        TextView txt_mate2_texto = (TextView)findViewById(app.example.crianbra.proyecto_moviles.R.id.txt_texto_felicidades);
         txt_mate2.setTypeface(fuenteMatematicas2);
         txt_mate2_texto.setTypeface(fuenteMatematicas2);
 
-        final Button buttonMatematica2 = (Button) findViewById(R.id.btn_felicidades_matematicas);
+        final Button buttonMatematica2 = (Button) findViewById(app.example.crianbra.proyecto_moviles.R.id.btn_felicidades_matematicas);
         buttonMatematica2.setTypeface(fuenteMatematicas2);
         buttonMatematica2.setOnClickListener(new View.OnClickListener() {
             @Override

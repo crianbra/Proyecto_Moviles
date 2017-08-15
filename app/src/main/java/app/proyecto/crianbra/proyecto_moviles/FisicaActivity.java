@@ -1,47 +1,43 @@
-package com.example.crianbra.proyecto_moviles;
+package app.proyecto.crianbra.proyecto_moviles;
 
 import android.graphics.Typeface;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import com.google.android.youtube.player.YouTubeBaseActivity;
 import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubePlayer;
-import com.google.android.youtube.player.YouTubePlayer.ErrorReason;
-import com.google.android.youtube.player.YouTubePlayer.PlaybackEventListener;
-import com.google.android.youtube.player.YouTubePlayer.PlayerStateChangeListener;
-import com.google.android.youtube.player.YouTubePlayer.Provider;
 import com.google.android.youtube.player.YouTubePlayerView;
 
-public class EstadisticaActivity extends YouTubeBaseActivity implements YouTubePlayer.OnInitializedListener {
+public class FisicaActivity extends YouTubeBaseActivity implements YouTubePlayer.OnInitializedListener {
 
     public static final String API_KEY = "AIzaSyB3Lo3FVWitwengnGYfvjscZiK5zh43AjA";
-    public static final String VIDEO_ID = "Nlfk7kRz2uU";
+    public static final String VIDEO_ID = "3I8sVqo07GM";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_estadistica);
+        setContentView(app.example.crianbra.proyecto_moviles.R.layout.activity_fisica);
 
         String carpetaFuente = "fonts/galette-med.otf";
-        Typeface fuenteEstadistica = Typeface.createFromAsset(getAssets(), carpetaFuente);
-        TextView txt_estadistica = (TextView)findViewById(R.id.txt_estadistica_1);
-        TextView txt_estadisticas_texto = (TextView)findViewById(R.id.texto_estadistica);
-        txt_estadistica.setTypeface(fuenteEstadistica);
-        txt_estadisticas_texto.setTypeface(fuenteEstadistica);
+        Typeface fuenteFisica = Typeface.createFromAsset(getAssets(), carpetaFuente);
+        TextView txt_fisica = (TextView)findViewById(app.example.crianbra.proyecto_moviles.R.id.txt_fisica_1);
+        TextView txt_fisica_texto = (TextView)findViewById(app.example.crianbra.proyecto_moviles.R.id.texto_fisica);
+        txt_fisica.setTypeface(fuenteFisica);
+        txt_fisica_texto.setTypeface(fuenteFisica);
 
-        /** Initializing YouTube Player View **/
-        YouTubePlayerView youTubePlayerView = (YouTubePlayerView) findViewById(R.id.youtube_player_estadistica);
+        YouTubePlayerView youTubePlayerView = (YouTubePlayerView) findViewById(app.example.crianbra.proyecto_moviles.R.id.youtube_player_fisica);
         youTubePlayerView.initialize(API_KEY, this);
     }
 
+
     @Override
-    public void onInitializationFailure(Provider provider, YouTubeInitializationResult result) {
+    public void onInitializationFailure(YouTubePlayer.Provider provider, YouTubeInitializationResult result) {
         Toast.makeText(this, "Failured to Initialize!", Toast.LENGTH_LONG).show();
     }
     @Override
-    public void onInitializationSuccess(Provider provider, YouTubePlayer player, boolean wasRestored) {
+    public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer player, boolean wasRestored) {
 /** add listeners to YouTubePlayer instance **/
         player.setPlayerStateChangeListener(playerStateChangeListener);
         player.setPlaybackEventListener(playbackEventListener);
@@ -51,7 +47,7 @@ public class EstadisticaActivity extends YouTubeBaseActivity implements YouTubeP
         }
     }
 
-    private PlaybackEventListener playbackEventListener = new PlaybackEventListener() {
+    private YouTubePlayer.PlaybackEventListener playbackEventListener = new YouTubePlayer.PlaybackEventListener() {
         @Override
         public void onBuffering(boolean arg0) {
         }
@@ -68,12 +64,12 @@ public class EstadisticaActivity extends YouTubeBaseActivity implements YouTubeP
         public void onStopped() {
         }
     };
-    private PlayerStateChangeListener playerStateChangeListener = new PlayerStateChangeListener() {
+    private YouTubePlayer.PlayerStateChangeListener playerStateChangeListener = new YouTubePlayer.PlayerStateChangeListener() {
         @Override
         public void onAdStarted() {
         }
         @Override
-        public void onError(ErrorReason arg0) {
+        public void onError(YouTubePlayer.ErrorReason arg0) {
         }
         @Override
         public void onLoaded(String arg0) {

@@ -1,4 +1,4 @@
-package com.example.crianbra.proyecto_moviles;
+package app.example.crianbra.proyecto_moviles;
 
 import org.junit.Test;
 

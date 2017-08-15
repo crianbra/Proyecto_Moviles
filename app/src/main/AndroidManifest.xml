@@ -14,25 +14,25 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".MainActivity">
+        <activity android:name="app.proyecto.crianbra.proyecto_moviles.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".RegistroActivity" />
+        <activity android:name="app.proyecto.crianbra.proyecto_moviles.LoginActivity" />
+        <activity android:name="app.proyecto.crianbra.proyecto_moviles.RegistroActivity" />
         <activity
-            android:name=".CursosActivity"
+            android:name="app.proyecto.crianbra.proyecto_moviles.CursosActivity"
             android:label="@string/title_activity_cursos"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".MatematicaActivity" />
-        <activity android:name=".FisicaActivity" />
-        <activity android:name=".AlgebraActivity" />
-        <activity android:name=".EstadisticaActivity" />
-        <activity android:name=".Matematica2Activity" />
-        <activity android:name=".MiPerfilActivity"></activity>
+        <activity android:name="app.proyecto.crianbra.proyecto_moviles.MatematicaActivity" />
+        <activity android:name="app.proyecto.crianbra.proyecto_moviles.FisicaActivity" />
+        <activity android:name="app.proyecto.crianbra.proyecto_moviles.AlgebraActivity" />
+        <activity android:name="app.proyecto.crianbra.proyecto_moviles.EstadisticaActivity" />
+        <activity android:name="app.proyecto.crianbra.proyecto_moviles.Matematica2Activity" />
+        <activity android:name="app.proyecto.crianbra.proyecto_moviles.MiPerfilActivity"></activity>
 
     </application>
 

@@ -1,11 +1,9 @@
-package com.example.crianbra.proyecto_moviles;
+package app.proyecto.crianbra.proyecto_moviles;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.design.internal.NavigationMenuItemView;
 import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.View;
@@ -17,7 +15,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.widget.Button;
-import android.widget.TextView;
 
 public class CursosActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener ,
@@ -28,25 +25,25 @@ public class CursosActivity extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cursos);
+        setContentView(app.example.crianbra.proyecto_moviles.R.layout.activity_cursos);
 
         String carpetaFuente = "fonts/galette-med.otf";
         Typeface fuenteCursos = Typeface.createFromAsset(getAssets(), carpetaFuente);
         
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = (Toolbar) findViewById(app.example.crianbra.proyecto_moviles.R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = (DrawerLayout) findViewById(app.example.crianbra.proyecto_moviles.R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+                this, drawer, toolbar, app.example.crianbra.proyecto_moviles.R.string.navigation_drawer_open, app.example.crianbra.proyecto_moviles.R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        NavigationView navigationView = (NavigationView) findViewById(app.example.crianbra.proyecto_moviles.R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
 
-        final Button buttonMatematica = (Button) findViewById(R.id.btn_curso_matematicas);
+        final Button buttonMatematica = (Button) findViewById(app.example.crianbra.proyecto_moviles.R.id.btn_curso_matematicas);
         buttonMatematica.setTypeface(fuenteCursos);
         buttonMatematica.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,7 +54,7 @@ public class CursosActivity extends AppCompatActivity
             }
         });
 
-        final Button buttonFisica = (Button) findViewById(R.id.btn_curso_fisica);
+        final Button buttonFisica = (Button) findViewById(app.example.crianbra.proyecto_moviles.R.id.btn_curso_fisica);
         buttonFisica.setTypeface(fuenteCursos);
         buttonFisica.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -68,7 +65,7 @@ public class CursosActivity extends AppCompatActivity
             }
         });
 
-        final Button buttonAlgebra = (Button) findViewById(R.id.btn_curso_algebra);
+        final Button buttonAlgebra = (Button) findViewById(app.example.crianbra.proyecto_moviles.R.id.btn_curso_algebra);
         buttonAlgebra.setTypeface(fuenteCursos);
         buttonAlgebra.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -79,7 +76,7 @@ public class CursosActivity extends AppCompatActivity
             }
         });
 
-        final Button buttonEstadistica= (Button) findViewById(R.id.btn_curso_estadistica);
+        final Button buttonEstadistica= (Button) findViewById(app.example.crianbra.proyecto_moviles.R.id.btn_curso_estadistica);
         buttonEstadistica.setTypeface(fuenteCursos);
         buttonEstadistica.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -93,7 +90,7 @@ public class CursosActivity extends AppCompatActivity
 
     @Override
     public void onBackPressed() {
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = (DrawerLayout) findViewById(app.example.crianbra.proyecto_moviles.R.id.drawer_layout);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
@@ -116,18 +113,18 @@ public class CursosActivity extends AppCompatActivity
         NavigationMenuItemView perfil = (NavigationMenuItemView) findViewById(R.id.nav_camera);
         perfil.setTypeface(fuenteCursos1);*/
 
-        if (id == R.id.nav_camera) {
+        if (id == app.example.crianbra.proyecto_moviles.R.id.nav_camera) {
 
             Intent i = new Intent(CursosActivity.this, MiPerfilActivity.class);
             startActivity(i);
             //setTitle("Mi Perfil");
 
-        } else if (id == R.id.nav_gallery) {
+        } else if (id == app.example.crianbra.proyecto_moviles.R.id.nav_gallery) {
             fragment = new MicursosFragment();
             fragmentoSeleccionado = true;
             //setTitle("Mis Cursos");
 
-        } else if (id == R.id.nav_send) {
+        } else if (id == app.example.crianbra.proyecto_moviles.R.id.nav_send) {
 
             Intent i = new Intent(CursosActivity.this, MainActivity.class);
             startActivity(i);
@@ -135,14 +132,14 @@ public class CursosActivity extends AppCompatActivity
         }
 
         if (fragmentoSeleccionado){
-            getSupportFragmentManager().beginTransaction().replace(R.id.Contenedor, fragment).addToBackStack("xxx").commit();
+            getSupportFragmentManager().beginTransaction().replace(app.example.crianbra.proyecto_moviles.R.id.Contenedor, fragment).addToBackStack("xxx").commit();
 
             //item.setChecked(true);
             //getSupportActionBar().setTitle(item.getTitle());
 
         }
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = (DrawerLayout) findViewById(app.example.crianbra.proyecto_moviles.R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
