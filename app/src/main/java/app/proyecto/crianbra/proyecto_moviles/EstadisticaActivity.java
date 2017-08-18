@@ -4,6 +4,8 @@ import android.graphics.Typeface;
 import android.os.Bundle;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.crianbra.proyecto_moviles.R;
 import com.google.android.youtube.player.YouTubeBaseActivity;
 import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubePlayer;
@@ -21,17 +23,17 @@ public class EstadisticaActivity extends YouTubeBaseActivity implements YouTubeP
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(app.example.crianbra.proyecto_moviles.R.layout.activity_estadistica);
+        setContentView(R.layout.activity_estadistica);
 
         String carpetaFuente = "fonts/galette-med.otf";
         Typeface fuenteEstadistica = Typeface.createFromAsset(getAssets(), carpetaFuente);
-        TextView txt_estadistica = (TextView)findViewById(app.example.crianbra.proyecto_moviles.R.id.txt_estadistica_1);
-        TextView txt_estadisticas_texto = (TextView)findViewById(app.example.crianbra.proyecto_moviles.R.id.texto_estadistica);
+        TextView txt_estadistica = (TextView)findViewById(R.id.txt_estadistica_1);
+        TextView txt_estadisticas_texto = (TextView)findViewById(R.id.texto_estadistica);
         txt_estadistica.setTypeface(fuenteEstadistica);
         txt_estadisticas_texto.setTypeface(fuenteEstadistica);
 
         /** Initializing YouTube Player View **/
-        YouTubePlayerView youTubePlayerView = (YouTubePlayerView) findViewById(app.example.crianbra.proyecto_moviles.R.id.youtube_player_estadistica);
+        YouTubePlayerView youTubePlayerView = (YouTubePlayerView) findViewById(R.id.youtube_player_estadistica);
         youTubePlayerView.initialize(API_KEY, this);
     }
 

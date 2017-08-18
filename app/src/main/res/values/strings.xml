@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">EducApp</string>
+
+    <string name="facebook_app_id">1414862541923055</string>
     <string name="title_activity_drawer">DrawerActivity</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -16,5 +18,7 @@
     <string name="login_usuario">Usuario</string>
     <string name="login_contraseña">Contraseña</string>
     <string name="btn_ingresar">Ingresar</string>
+    <string name="cancel_login">login cancelado</string>
+    <string name="error_login">error en login</string>
 
 </resources>

@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/fondo"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.crianbra.proyecto_moviles.app.example.crianbra.proyecto_moviles.CursosActivity"
+    tools:context="app.proyecto.crianbra.proyecto_moviles.CursosActivity"
     tools:showIn="@layout/app_bar_cursos">
 
 

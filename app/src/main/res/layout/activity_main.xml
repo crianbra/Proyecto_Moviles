@@ -6,8 +6,11 @@
     android:layout_height="match_parent"
     xmlns:facebook="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/fondo"
-    tools:context="com.example.crianbra.proyecto_moviles.app.example.crianbra.proyecto_moviles.MainActivity">
+    tools:context="app.proyecto.crianbra.proyecto_moviles.MainActivity">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
     <RelativeLayout
         android:layout_width="368dp"
@@ -49,6 +52,17 @@
             android:layout_alignLeft="@+id/btn_inicio"
             android:layout_alignStart="@+id/btn_inicio" />
 
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/loginButton"
+            android:layout_width="270dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/btn_registro"
+            android:layout_alignLeft="@+id/btn_registro"
+            android:layout_alignStart="@+id/btn_registro"
+            android:layout_marginTop="18dp" />
+
 
     </RelativeLayout>
+
+    </ScrollView>
 </android.support.constraint.ConstraintLayout>

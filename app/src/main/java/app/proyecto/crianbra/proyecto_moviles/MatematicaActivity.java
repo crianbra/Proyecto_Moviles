@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.crianbra.proyecto_moviles.R;
 import com.google.android.youtube.player.YouTubeBaseActivity;
 import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubePlayer;
@@ -28,21 +30,21 @@ public class MatematicaActivity extends YouTubeBaseActivity implements YouTubePl
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(app.example.crianbra.proyecto_moviles.R.layout.activity_matematica);
+        setContentView(R.layout.activity_matematica);
 
         String carpetaFuente = "fonts/galette-med.otf";
         Typeface fuenteMatematica = Typeface.createFromAsset(getAssets(), carpetaFuente);
-        TextView txt_matematicas = (TextView)findViewById(app.example.crianbra.proyecto_moviles.R.id.txt_matematicas_1);
-        TextView txt_matematicas_texto = (TextView)findViewById(app.example.crianbra.proyecto_moviles.R.id.texto_matematica);
+        TextView txt_matematicas = (TextView)findViewById(R.id.txt_matematicas_1);
+        TextView txt_matematicas_texto = (TextView)findViewById(R.id.texto_matematica);
         txt_matematicas.setTypeface(fuenteMatematica);
         txt_matematicas_texto.setTypeface(fuenteMatematica);
 
         /** Initializing YouTube Player View **/
-        YouTubePlayerView youTubePlayerView = (YouTubePlayerView) findViewById(app.example.crianbra.proyecto_moviles.R.id.youtube_player_matematicas);
+        YouTubePlayerView youTubePlayerView = (YouTubePlayerView) findViewById(R.id.youtube_player_matematicas);
         youTubePlayerView.initialize(API_KEY, this);
 
 
-        final Button buttonMatematica = (Button) findViewById(app.example.crianbra.proyecto_moviles.R.id.btn_siguiente);
+        final Button buttonMatematica = (Button) findViewById(R.id.btn_siguiente);
         buttonMatematica.setTypeface(fuenteMatematica);
         buttonMatematica.setOnClickListener(new View.OnClickListener() {
             @Override

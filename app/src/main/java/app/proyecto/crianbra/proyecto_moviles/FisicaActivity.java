@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.crianbra.proyecto_moviles.R;
 import com.google.android.youtube.player.YouTubeBaseActivity;
 import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubePlayer;
@@ -18,16 +19,16 @@ public class FisicaActivity extends YouTubeBaseActivity implements YouTubePlayer
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(app.example.crianbra.proyecto_moviles.R.layout.activity_fisica);
+        setContentView(R.layout.activity_fisica);
 
         String carpetaFuente = "fonts/galette-med.otf";
         Typeface fuenteFisica = Typeface.createFromAsset(getAssets(), carpetaFuente);
-        TextView txt_fisica = (TextView)findViewById(app.example.crianbra.proyecto_moviles.R.id.txt_fisica_1);
-        TextView txt_fisica_texto = (TextView)findViewById(app.example.crianbra.proyecto_moviles.R.id.texto_fisica);
+        TextView txt_fisica = (TextView)findViewById(R.id.txt_fisica_1);
+        TextView txt_fisica_texto = (TextView)findViewById(R.id.texto_fisica);
         txt_fisica.setTypeface(fuenteFisica);
         txt_fisica_texto.setTypeface(fuenteFisica);
 
-        YouTubePlayerView youTubePlayerView = (YouTubePlayerView) findViewById(app.example.crianbra.proyecto_moviles.R.id.youtube_player_fisica);
+        YouTubePlayerView youTubePlayerView = (YouTubePlayerView) findViewById(R.id.youtube_player_fisica);
         youTubePlayerView.initialize(API_KEY, this);
     }
 

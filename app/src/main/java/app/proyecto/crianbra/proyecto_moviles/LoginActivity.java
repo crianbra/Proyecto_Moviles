@@ -12,6 +12,8 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.crianbra.proyecto_moviles.R;
+
 public class LoginActivity extends AppCompatActivity {
 
     String tag = "Lifecycle";
@@ -19,19 +21,19 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(app.example.crianbra.proyecto_moviles.R.layout.activity_login);
+        setContentView(R.layout.activity_login);
 
         String carpetaFuente = "fonts/galette-med.otf";
 
-        final TextView txt_user = (TextView)findViewById(app.example.crianbra.proyecto_moviles.R.id.text_user);
+        final TextView txt_user = (TextView)findViewById(R.id.text_user);
         Typeface fuenteLogin = Typeface.createFromAsset(getAssets(), carpetaFuente);
         txt_user.setTypeface(fuenteLogin);
 
-        final TextView txt_pass = (TextView)findViewById(app.example.crianbra.proyecto_moviles.R.id.txt_pass);
+        final TextView txt_pass = (TextView)findViewById(R.id.txt_pass);
         txt_pass.setTypeface(fuenteLogin);
 
 
-        final Button buttonLogin = (Button) findViewById(app.example.crianbra.proyecto_moviles.R.id.btn_ingreso);
+        final Button buttonLogin = (Button) findViewById(R.id.btn_ingreso);
         buttonLogin.setTypeface(fuenteLogin);
         buttonLogin.setOnClickListener(new View.OnClickListener() {
             @Override

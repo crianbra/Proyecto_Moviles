@@ -4,6 +4,8 @@ import android.graphics.Typeface;
 import android.os.Bundle;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.crianbra.proyecto_moviles.R;
 import com.google.android.youtube.player.YouTubeBaseActivity;
 import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubePlayer;
@@ -21,18 +23,18 @@ public class AlgebraActivity extends YouTubeBaseActivity implements YouTubePlaye
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(app.example.crianbra.proyecto_moviles.R.layout.activity_algebra);
+        setContentView(R.layout.activity_algebra);
 
         String carpetaFuente = "fonts/galette-med.otf";
         Typeface fuenteAlgebra = Typeface.createFromAsset(getAssets(), carpetaFuente);
-        TextView txt_algebra = (TextView)findViewById(app.example.crianbra.proyecto_moviles.R.id.txt_algebra_1);
-        TextView txt_algebra_texto = (TextView)findViewById(app.example.crianbra.proyecto_moviles.R.id.texto_algebra);
+        TextView txt_algebra = (TextView)findViewById(R.id.txt_algebra_1);
+        TextView txt_algebra_texto = (TextView)findViewById(R.id.texto_algebra);
         txt_algebra.setTypeface(fuenteAlgebra);
         txt_algebra_texto.setTypeface(fuenteAlgebra);
 
 
         /** Initializing YouTube Player View **/
-        YouTubePlayerView youTubePlayerView = (YouTubePlayerView) findViewById(app.example.crianbra.proyecto_moviles.R.id.youtube_player_algebra);
+        YouTubePlayerView youTubePlayerView = (YouTubePlayerView) findViewById(R.id.youtube_player_algebra);
         youTubePlayerView.initialize(API_KEY, this);
     }
 
