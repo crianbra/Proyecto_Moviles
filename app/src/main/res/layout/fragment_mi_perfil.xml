@@ -1,0 +1,105 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context="app.proyecto.crianbra.proyecto_moviles.MiPerfilFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <EditText
+            android:id="@+id/txt_nombre"
+            android:layout_width="270dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@android:color/background_light"
+            android:ems="10"
+            android:hint="Nombre Completo"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/txt_colegio"
+            android:layout_width="270dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/txt_nombre"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/background_light"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Colegio o Institución" />
+
+        <EditText
+            android:id="@+id/txt_ciudad"
+            android:layout_width="270dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/txt_colegio"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:background="@android:color/background_light"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Ciudad"/>
+
+        <EditText
+            android:id="@+id/txt_mail"
+            android:layout_width="270dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/txt_ciudad"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/background_light"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="E-Mail" />
+
+        <EditText
+            android:id="@+id/txt_contrasenia"
+            android:layout_width="270dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/txt_mail"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:background="@android:color/background_light"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="Contraseña" />
+
+        <Button
+            android:id="@+id/btn_guardar"
+            android:layout_width="130dp"
+            android:layout_height="80dp"
+            android:layout_alignLeft="@+id/txt_contrasenia"
+            android:layout_alignStart="@+id/txt_contrasenia"
+            android:layout_below="@+id/txt_contrasenia"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorPrimary"
+            android:text="Guardar"
+            android:textColor="@android:color/background_light"
+            android:textSize="?attr/dialogPreferredPadding" />
+
+        <Button
+            android:id="@+id/btn_cancelar"
+            android:layout_width="130dp"
+            android:layout_height="80dp"
+            android:layout_alignEnd="@+id/txt_contrasenia"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/txt_contrasenia"
+            android:background="@color/colorPrimary"
+            android:text="Cancelar"
+            android:textColor="@android:color/background_light"
+            android:textSize="?attr/dialogPreferredPadding" />
+    </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

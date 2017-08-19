@@ -24,8 +24,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="app.proyecto.crianbra.proyecto_moviles.LoginActivity" />
-        <activity android:name="app.proyecto.crianbra.proyecto_moviles.RegistroActivity" />
         <activity
             android:name="app.proyecto.crianbra.proyecto_moviles.CursosActivity"
             android:label="@string/title_activity_cursos"
@@ -35,7 +33,6 @@
         <activity android:name="app.proyecto.crianbra.proyecto_moviles.AlgebraActivity" />
         <activity android:name="app.proyecto.crianbra.proyecto_moviles.EstadisticaActivity" />
         <activity android:name="app.proyecto.crianbra.proyecto_moviles.Matematica2Activity" />
-        <activity android:name="app.proyecto.crianbra.proyecto_moviles.MiPerfilActivity"></activity>
 
         <activity android:name="com.facebook.FacebookActivity"
             android:configChanges="keyboard|keyboardHidden|screenLayout|orientation"
