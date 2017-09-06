@@ -30,7 +30,7 @@
             android:layout_centerHorizontal="true" />
 
         <Button
-            android:id="@+id/btn_curso_fisica"
+            android:id="@+id/btn_celc"
             android:layout_width="270dp"
             android:layout_height="80dp"
             android:layout_alignLeft="@+id/btn_curso_matematicas"
@@ -38,35 +38,35 @@
             android:layout_below="@+id/btn_curso_matematicas"
             android:layout_marginTop="44dp"
             android:background="@color/colorPrimary"
-            android:text="Física 1"
+            android:text="CELC"
             android:textColor="@android:color/background_light"
             android:textSize="?attr/dialogPreferredPadding" />
 
         <Button
-            android:id="@+id/btn_curso_algebra"
+            android:id="@+id/btn_asiri"
             android:layout_width="270dp"
             android:layout_height="80dp"
-            android:layout_alignLeft="@+id/btn_curso_fisica"
-            android:layout_alignStart="@+id/btn_curso_fisica"
-            android:layout_below="@+id/btn_curso_fisica"
+            android:layout_alignLeft="@+id/btn_celc"
+            android:layout_alignStart="@+id/btn_celc"
+            android:layout_below="@+id/btn_celc"
             android:layout_marginTop="39dp"
             android:background="@color/colorPrimary"
-            android:text="Álgebra Lineal"
+            android:text="ASIRI"
             android:textColor="@android:color/background_light"
             android:textSize="?attr/dialogPreferredPadding" />
 
         <Button
-            android:id="@+id/btn_curso_estadistica"
+            android:id="@+id/btn_icpol"
             android:layout_width="270dp"
             android:layout_height="80dp"
-            android:background="@color/colorPrimary"
-            android:text="Estadística 1"
-            android:textColor="@android:color/background_light"
-            android:textSize="?attr/dialogPreferredPadding"
-            android:layout_marginBottom="20dp"
+            android:layout_alignLeft="@+id/btn_asiri"
             android:layout_alignParentBottom="true"
-            android:layout_alignLeft="@+id/btn_curso_algebra"
-            android:layout_alignStart="@+id/btn_curso_algebra" />
+            android:layout_alignStart="@+id/btn_asiri"
+            android:layout_marginBottom="20dp"
+            android:background="@color/colorPrimary"
+            android:text="ICPOL"
+            android:textColor="@android:color/background_light"
+            android:textSize="?attr/dialogPreferredPadding" />
 
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>

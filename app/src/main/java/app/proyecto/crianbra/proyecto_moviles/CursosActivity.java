@@ -6,7 +6,6 @@ import android.content.SharedPreferences;
 import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -23,11 +22,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.crianbra.proyecto_moviles.R;
-import com.facebook.AccessToken;
-import com.facebook.CallbackManager;
 import com.facebook.appevents.AppEventsLogger;
 import com.facebook.login.LoginManager;
-import com.facebook.share.widget.ShareDialog;
 import com.squareup.picasso.Picasso;
 
 import org.json.JSONObject;
@@ -102,35 +98,35 @@ public class CursosActivity extends AppCompatActivity
             }
         });
 
-        final Button buttonFisica = (Button) findViewById(R.id.btn_curso_fisica);
-        buttonFisica.setTypeface(fuenteCursos);
-        buttonFisica.setOnClickListener(new View.OnClickListener() {
+        final Button buttonCelc = (Button) findViewById(R.id.btn_celc);
+        buttonCelc.setTypeface(fuenteCursos);
+        buttonCelc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Log.d (tag,"Si llamo a la funcion");
-                Intent intent06 = new Intent(CursosActivity.this, FisicaActivity.class);
+                Intent intent06 = new Intent(CursosActivity.this, CelcActivity.class);
                 startActivity(intent06);
             }
         });
 
-        final Button buttonAlgebra = (Button) findViewById(R.id.btn_curso_algebra);
-        buttonAlgebra.setTypeface(fuenteCursos);
-        buttonAlgebra.setOnClickListener(new View.OnClickListener() {
+        final Button buttonAsiri = (Button) findViewById(R.id.btn_asiri);
+        buttonAsiri.setTypeface(fuenteCursos);
+        buttonAsiri.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Log.d (tag,"Si llamo a la funcion");
-                Intent intent07 = new Intent(CursosActivity.this, AlgebraActivity.class);
+                Intent intent07 = new Intent(CursosActivity.this, AsiriActivity.class);
                 startActivity(intent07);
             }
         });
 
-        final Button buttonEstadistica= (Button) findViewById(R.id.btn_curso_estadistica);
-        buttonEstadistica.setTypeface(fuenteCursos);
-        buttonEstadistica.setOnClickListener(new View.OnClickListener() {
+        final Button buttonIcpol= (Button) findViewById(R.id.btn_icpol);
+        buttonIcpol.setTypeface(fuenteCursos);
+        buttonIcpol.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Log.d (tag,"Si llamo a la funcion");
-                Intent intent08 = new Intent(CursosActivity.this, EstadisticaActivity.class);
+                Intent intent08 = new Intent(CursosActivity.this, IcpolActivity.class);
                 startActivity(intent08);
             }
         });
@@ -161,7 +157,7 @@ public class CursosActivity extends AppCompatActivity
 
     }
 
-    public  void  setUserProfile_perfil (String jsondata){
+   /* public  void  setUserProfile_perfil (String jsondata){
 
         try {
             response = new JSONObject(jsondata);
@@ -175,7 +171,7 @@ public class CursosActivity extends AppCompatActivity
         } catch (Exception e){
             e.printStackTrace();
         }
-    }
+    }*/
 
 
   /*
@@ -226,14 +222,11 @@ para la cabecera del menu
 
             fragment = new MiPerfilFragment();
             fragmentoSeleccionado = true;
-
-            //Intent i = new Intent(CursosActivity.this, MiPerfilActivity.class);
-            //startActivity(i);
             //setTitle("Mi Perfil");
 
         } else if (id == R.id.nav_gallery) {
-            fragment = new MicursosFragment();
-            fragmentoSeleccionado = true;
+            Intent i = new Intent(CursosActivity.this, CursosActivity.class);
+            startActivity(i);
             //setTitle("Mis Cursos");
 
         } else if (id == R.id.nav_send) {
@@ -246,6 +239,7 @@ para la cabecera del menu
 
             item.setChecked(true);
             getSupportActionBar().setTitle(item.getTitle());
+
 
         }
 
