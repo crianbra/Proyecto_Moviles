@@ -83,8 +83,8 @@ public class CursosActivity extends AppCompatActivity
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);
+        //NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        navigation_view.setNavigationItemSelectedListener(this);
 
 
         final Button buttonMatematica = (Button) findViewById(R.id.btn_curso_matematicas);
@@ -157,7 +157,7 @@ public class CursosActivity extends AppCompatActivity
 
     }
 
-   /* public  void  setUserProfile_perfil (String jsondata){
+    /*public  void  setUserProfile_perfil (String jsondata){
 
         try {
             response = new JSONObject(jsondata);
@@ -189,11 +189,9 @@ para la cabecera del menu
             user_email.setText(response.get("email").toString());
             user_name.setText(response.get("name").toString());
 
-
-
             profile_pic_data = new JSONObject(response.get("picture").toString());
-
             profile_pic_url = new JSONObject(profile_pic_data.getString("data"));
+
             Picasso.with(this).load(profile_pic_url.getString("url"))
                     .into(user_picture);
 
@@ -274,7 +272,7 @@ para la cabecera del menu
         SavePerfil("");
         goLoginScreen();
     }
-    /// regresar a la pantalla de inicio de secion
+    /// regresar a la pantalla de inicio de sesion
     private void goLoginScreen() {
         Intent intent = new Intent(this, MainActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
@@ -282,7 +280,7 @@ para la cabecera del menu
     }
 
     /** Guarda la informacion del perfil*/
-    public  void SavePerfil(String data ){
+    public  void SavePerfil(String data){
 
         SharedPreferences Preferens = getSharedPreferences("Load_Profile", Context.MODE_PRIVATE);
         SharedPreferences.Editor  editor = Preferens.edit();

@@ -21,4 +21,10 @@
     <string name="cancel_login">login cancelado</string>
     <string name="error_login">error en login</string>
 
+    <string name="curso_mate">Matemáticas 1</string>
+
+    <string name="inicio">Inicio</string>
+    <string name="perfil">Mi Perfil</string>
+    <string name="cerrar">Cerrar Sesión</string>
+
 </resources>
