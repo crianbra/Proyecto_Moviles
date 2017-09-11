@@ -196,6 +196,9 @@ para la cabecera del menu
                     .into(user_picture);
 
 
+
+
+
         } catch (Exception e){
             e.printStackTrace();
         }
@@ -211,16 +214,18 @@ para la cabecera del menu
         Fragment fragment = null;
         Boolean fragmentoSeleccionado = false;
 
-        /*String carpetaFuente = "fonts/galette-med.otf";
-        Typeface fuenteCursos1 = Typeface.createFromAsset(getAssets(), carpetaFuente);
-        NavigationMenuItemView perfil = (NavigationMenuItemView) findViewById(R.id.nav_camera);
-        perfil.setTypeface(fuenteCursos1);*/
 
         if (id == R.id.nav_camera) {
 
             fragment = new MiPerfilFragment();
             fragmentoSeleccionado = true;
             //setTitle("Mi Perfil");
+
+
+            /*Bundle bundle = new Bundle();
+            bundle.putString("name", ""+user_name.getText().toString());
+            bundle.putString("email",""+user_email.getText().toString());
+            fragment.setArguments(bundle);*/
 
         } else if (id == R.id.nav_gallery) {
             Intent i = new Intent(CursosActivity.this, CursosActivity.class);
