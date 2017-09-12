@@ -8,31 +8,29 @@
     tools:context="app.proyecto.crianbra.proyecto_moviles.CelcActivity">
 
 
-        <RelativeLayout
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:weightSum="1">
 
                 <ImageView
                     android:id="@+id/celc"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
                     app:srcCompat="@drawable/celc" />
 
                 <ListView
                     android:id="@+id/mi_lista"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    tools:layout_editor_absoluteX="8dp"
-                    tools:layout_editor_absoluteY="182dp"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_marginTop="180dp" />
+                    android:layout_height="match_parent" />
 
-        </RelativeLayout>
+        </LinearLayout>
+
+
 
 
 </RelativeLayout>

@@ -2,6 +2,7 @@ package app.proyecto.crianbra.proyecto_moviles;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -10,7 +11,7 @@ import android.widget.Toast;
 import com.example.crianbra.proyecto_moviles.R;
 
 
-public class CelcActivity extends Activity {
+public class CelcActivity extends AppCompatActivity {
 
     private String cursosCelc[]=new String[]{"Curso de Computación","Curso de Asistente Contable","Curso de Electricidad Básica",
             "Curso de SENESCYT-INEVAL","Curso de Diseño Gráfico Básico", "Curso de Reparación de Celulares", "Curso de Emfermería",
