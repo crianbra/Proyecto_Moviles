@@ -25,7 +25,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:text="Matemáticas 1"
+            android:text="@string/mate"
             android:textColor="@color/colorPrimary"
             android:textSize="?attr/listPreferredItemHeightSmall" />
 
@@ -36,7 +36,7 @@
             android:layout_below="@+id/youtube_player_matematicas"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="13dp"
-            android:text="El objetivo inicial de esta asignatura es conseguir que los estudiantes de primer curso se hagan con los procedimientos prácticos básicos, que permiten la adaptación del estudio de las Matemáticas, en la Universidad."
+            android:text="@string/texto1"
             android:textAlignment="gravity"
             android:textColor="@color/colorPrimary"
             android:textSize="?attr/dialogPreferredPadding" />
@@ -60,7 +60,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="34dp"
             android:background="@color/colorPrimary"
-            android:text="Siguiente"
+            android:text="@string/siguiente"
             android:textColor="@android:color/background_light"
             android:textSize="?attr/dialogPreferredPadding" />
 

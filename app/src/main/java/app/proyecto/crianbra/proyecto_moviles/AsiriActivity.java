@@ -13,7 +13,7 @@ import com.example.crianbra.proyecto_moviles.R;
 
 public class AsiriActivity extends AppCompatActivity {
 
-    private String cursosCelc[]=new String[]{"Linux con Raspberry Pi","Modelado 3D + Impresora","Diseño de PCB en Eagle y Proteus",
+    private String cursosAsiri[]=new String[]{"Linux con Raspberry Pi","Modelado 3D + Impresora","Diseño de PCB en Eagle y Proteus",
             "MOdelado e Impresión 3D","Mantenimiento y Reparación de Computadoras", "Aplicaciones Electrónicas", "Curso + Impresora 3D"};
 
     private String descripcion[]=new String[]{"Del 28 al 31 de Agosto","2 y 23 de Septiembre",
@@ -36,15 +36,15 @@ public class AsiriActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_icpol);
+        setContentView(R.layout.activity_asiri);
 
-        LenguajeListAdapter adapter=new LenguajeListAdapter(this,cursosCelc,descripcion,imgid);
-        lista=(ListView)findViewById(R.id.mi_lista_icpol);
+        LenguajeListAdapter adapter=new LenguajeListAdapter(this,cursosAsiri,descripcion,imgid);
+        lista=(ListView)findViewById(R.id.milista_asiri);
         lista.setAdapter(adapter);
         lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                String Slecteditem= cursosCelc[+position];
+                String Slecteditem= cursosAsiri[+position];
                 Toast.makeText(getApplicationContext(), Slecteditem, Toast.LENGTH_SHORT).show();
             }
         });

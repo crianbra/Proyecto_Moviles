@@ -1,6 +1,8 @@
 package app.proyecto.crianbra.proyecto_moviles;
 
 import android.app.Activity;
+import android.content.res.AssetManager;
+import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -44,6 +46,7 @@ public class LenguajeListAdapter extends ArrayAdapter<String> {
 
         return rowView;
     }
+
 
 
 }

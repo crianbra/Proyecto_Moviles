@@ -1,6 +1,7 @@
 package app.proyecto.crianbra.proyecto_moviles;
 
 import android.app.Activity;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -41,6 +42,9 @@ public class CelcActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_celc);
+
+
+
 
         LenguajeListAdapter adapter=new LenguajeListAdapter(this,cursosCelc,descripcion,imgid);
         lista=(ListView)findViewById(R.id.mi_lista);

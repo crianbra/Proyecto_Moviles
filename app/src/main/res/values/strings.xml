@@ -27,4 +27,24 @@
     <string name="perfil">Mi Perfil</string>
     <string name="cerrar">Cerrar Sesión</string>
 
+    <string name="nombre">Nombre Completo</string>
+    <string name="colegio">Colegio o Institución</string>
+    <string name="ciudad">Ciudad</string>
+    <string name="mail">Mail</string>
+    <string name="edad">Edad</string>
+    <string name="facebook">IdFacebook</string>
+
+    <string name="guardar">Guardar</string>
+    <string name="cargar">Cargar</string>
+    <string name="actualizar">Actualizar</string>
+    <string name="salir">Salir</string>
+
+    <string name="mate">Matemáticas 1</string>
+    <string name="texto1">El objetivo inicial de esta asignatura es conseguir que los estudiantes de primer curso se hagan con los procedimientos prácticos básicos, que permiten la adaptación del estudio de las Matemáticas, en la Universidad.</string>
+    <string name="siguiente">Siguiente</string>
+
+    <string name="felicidades">Felicidades</string>
+    <string name="texto">Has aprobado con éxitos el curso de Matemáticas 1.</string>
+    <string name="terminaste">Terminaste</string>
+
 </resources>

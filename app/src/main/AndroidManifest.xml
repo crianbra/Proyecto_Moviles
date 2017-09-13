@@ -38,7 +38,8 @@
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <activity android:name="app.proyecto.crianbra.proyecto_moviles.IcpolActivity" />
         <activity android:name="app.proyecto.crianbra.proyecto_moviles.CelcActivity" />
-        <activity android:name="app.proyecto.crianbra.proyecto_moviles.AsiriActivity"></activity>
+        <activity android:name="app.proyecto.crianbra.proyecto_moviles.AsiriActivity" />
+        <activity android:name="app.proyecto.crianbra.proyecto_moviles.PerfilActivity"></activity>
     </application>
 
 </manifest>

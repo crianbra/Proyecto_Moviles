@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Typeface;
 import android.net.Uri;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.util.Log;
@@ -20,22 +21,32 @@ import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.crianbra.proyecto_moviles.R;
 import com.facebook.appevents.AppEventsLogger;
 import com.facebook.login.LoginManager;
 import com.squareup.picasso.Picasso;
 
+import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.Reader;
+import java.io.UnsupportedEncodingException;
+import java.net.URL;
+
+import javax.net.ssl.HttpsURLConnection;
+
 public class CursosActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener ,
-        MicursosFragment.OnFragmentInteractionListener, MiPerfilFragment.OnFragmentInteractionListener{
+        implements NavigationView.OnNavigationItemSelectedListener {
 
     NavigationView navigation_view;
     String jsondata;
     int LOGED=0;
-
 
     String tag = "Lifecycle";
 
@@ -44,7 +55,7 @@ public class CursosActivity extends AppCompatActivity
     //// profile_pic_data: Objeto JSON que contendra toda la informacion relevante a la foto del usuario, url dimensiones
     //// profile_pic_url: Objeto JSON que contendra la url del usuario extraida de profile_pic_data
 
-    TextView user_name, user_email;
+    TextView user_name, user_email, user_id, user_location;
     //user_email: Variable para asignar el correo de que se obtiene  del Objeto JSON
     //user_name : Variable para asignar el nombre del usuario que se obtiene del Objeto JSON
 
@@ -153,32 +164,11 @@ public class CursosActivity extends AppCompatActivity
         user_name = (TextView) header.findViewById(R.id.username);
         user_picture = (ImageView) header.findViewById(R.id.profile_pic);
         user_email = (TextView) header.findViewById(R.id.email);
+        user_id = (TextView) header.findViewById(R.id.id);
+        //user_location = (TextView) header.findViewById(R.id.location);
 
 
     }
-
-    /*public  void  setUserProfile_perfil (String jsondata){
-
-        try {
-            response = new JSONObject(jsondata);
-
-            profile_pic_data = new JSONObject(response.get("picture").toString());
-            profile_pic_url = new JSONObject(profile_pic_data.getString("data"));
-
-
-            Picasso.with(this).load(profile_pic_url.getString("url"))
-                    .into(user_picture_perfil);
-        } catch (Exception e){
-            e.printStackTrace();
-        }
-    }*/
-
-
-  /*
-       Obtener la informacion de perfild e usuario
-para la cabecera del menu
-
-     */
 
 
     public  void  setUserProfile(String jsondata){
@@ -188,15 +178,14 @@ para la cabecera del menu
 
             user_email.setText(response.get("email").toString());
             user_name.setText(response.get("name").toString());
+            user_id.setText(response.get("id").toString());
+            //user_location.setText(response.get("location").toString());
 
             profile_pic_data = new JSONObject(response.get("picture").toString());
             profile_pic_url = new JSONObject(profile_pic_data.getString("data"));
 
             Picasso.with(this).load(profile_pic_url.getString("url"))
                     .into(user_picture);
-
-
-
 
 
         } catch (Exception e){
@@ -217,15 +206,18 @@ para la cabecera del menu
 
         if (id == R.id.nav_camera) {
 
-            fragment = new MiPerfilFragment();
-            fragmentoSeleccionado = true;
+            //fragment = new MiPerfilFragment();
+            //fragmentoSeleccionado = true;
             //setTitle("Mi Perfil");
 
+            Intent i = new Intent(this, PerfilActivity.class);
+            String data [] = new String [3];
+            i.putExtra("name", ""+user_name.getText());
+            i.putExtra("email", ""+user_email.getText());
+            i.putExtra("id", ""+user_id.getText());
+            //i.putExtra("location", ""+user_location.getText());
+            startActivity(i);
 
-            /*Bundle bundle = new Bundle();
-            bundle.putString("name", ""+user_name.getText().toString());
-            bundle.putString("email",""+user_email.getText().toString());
-            fragment.setArguments(bundle);*/
 
         } else if (id == R.id.nav_gallery) {
             Intent i = new Intent(CursosActivity.this, CursosActivity.class);
@@ -251,7 +243,10 @@ para la cabecera del menu
         return true;
     }
 
-    @Override
+
+
+
+
     public void onFragmentInteraction(Uri uri) {
 
     }

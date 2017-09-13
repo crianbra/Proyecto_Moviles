@@ -13,7 +13,7 @@ import com.example.crianbra.proyecto_moviles.R;
 
 public class IcpolActivity extends AppCompatActivity {
 
-    private String cursosCelc[]=new String[]{"Cálculo de una Variable","Cálculo de Varias Variables","Física 1",
+    private String cursosIcpol[]=new String[]{"Cálculo de una Variable","Cálculo de Varias Variables","Física 1",
             "Física 2","Estadística", "Ecuaciones Diferenciales", "Analisis Numerico"};
 
     private String descripcion[]=new String[]{"Sábado 9 y Domingo 10 de 8:00am a 13:00pm","Sábado 9 y Domingo 10 de 14:00pm a 19:00pm",
@@ -38,13 +38,13 @@ public class IcpolActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_icpol);
 
-        LenguajeListAdapter adapter=new LenguajeListAdapter(this,cursosCelc,descripcion,imgid);
+        LenguajeListAdapter adapter=new LenguajeListAdapter(this,cursosIcpol,descripcion,imgid);
         lista=(ListView)findViewById(R.id.mi_lista_icpol);
         lista.setAdapter(adapter);
         lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                String Slecteditem= cursosCelc[+position];
+                String Slecteditem= cursosIcpol[+position];
                 Toast.makeText(getApplicationContext(), Slecteditem, Toast.LENGTH_SHORT).show();
             }
         });

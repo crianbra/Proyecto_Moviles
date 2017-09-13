@@ -28,4 +28,25 @@
     <string name="inicio">Home</string>
     <string name="perfil">My Profile</string>
     <string name="cerrar">Sign off</string>
+
+    <string name="nombre">Full Name</string>
+    <string name="colegio">College or Institution</string>
+    <string name="ciudad">City</string>
+    <string name="mail">Mail</string>
+    <string name="edad">Age</string>
+    <string name="facebook">IdFacebook</string>
+
+    <string name="guardar">Save</string>
+    <string name="cargar">Load</string>
+    <string name="actualizar">Update</string>
+    <string name="salir">Get Out</string>
+
+    <string name="mate">Mathematics 1</string>
+    <string name="texto1">The initial objective of this subject is to get first year students to do with the basic practical procedures, which allow the adaptation of the study of Mathematics, in the University.</string>
+    <string name="siguiente">Next</string>
+
+    <string name="felicidades">Congratulations</string>
+    <string name="texto">You successfully passed the Mathematics course 1.</string>
+    <string name="terminaste">Finished</string>
+
 </resources>
