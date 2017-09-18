@@ -34,5 +34,6 @@ public class OnlineActivity extends ActionBarActivity {
                 startActivity(intent05);
             }
         });
+
     }
 }

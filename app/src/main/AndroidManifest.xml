@@ -49,7 +49,9 @@
         </activity>
         >
         <activity android:name="app.proyecto.crianbra.proyecto_moviles.Mate2Activity" />
-        <activity android:name="app.proyecto.crianbra.proyecto_moviles.QuizActivity"></activity>
+        <activity android:name="app.proyecto.crianbra.proyecto_moviles.QuizActivity" />
+        <activity android:name="app.proyecto.crianbra.proyecto_moviles.EntidadesActivity" />
+        <activity android:name="app.proyecto.crianbra.proyecto_moviles.CelcInfoActivity"></activity>
     </application>
 
 </manifest>

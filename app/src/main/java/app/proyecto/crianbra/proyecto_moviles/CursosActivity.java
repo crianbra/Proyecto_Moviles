@@ -55,7 +55,10 @@ public class CursosActivity extends AppCompatActivity
     //// profile_pic_data: Objeto JSON que contendra toda la informacion relevante a la foto del usuario, url dimensiones
     //// profile_pic_url: Objeto JSON que contendra la url del usuario extraida de profile_pic_data
 
-    TextView user_name, user_email, user_id, user_location;
+    static TextView user_name;
+    static TextView user_email;
+    TextView user_id;
+    TextView user_location;
     //user_email: Variable para asignar el correo de que se obtiene  del Objeto JSON
     //user_name : Variable para asignar el nombre del usuario que se obtiene del Objeto JSON
 
@@ -115,7 +118,7 @@ public class CursosActivity extends AppCompatActivity
             @Override
             public void onClick(View v) {
                 Log.d (tag,"Si llamo a la funcion");
-                Intent intent06 = new Intent(CursosActivity.this, CelcActivity.class);
+                Intent intent06 = new Intent(CursosActivity.this, EntidadesActivity.class);
                 startActivity(intent06);
             }
         });

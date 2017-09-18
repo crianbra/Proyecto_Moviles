@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context="app.proyecto.crianbra.proyecto_moviles.CelcInfoActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:srcCompat="@drawable/celcinfo" />
+
+        <TextView
+            android:id="@+id/celc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="CELC"
+            android:textColor="@color/colorPrimary"
+            android:textSize="?attr/dialogPreferredPadding" />
+
+        <TextView
+            android:id="@+id/texto_cel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Somos una institución basada en el modelo de educación por perfiles de desempeño con principios éticos y humanistas, dedicada a la formación de damas y caballeros críticos y competentes."
+            android:textColor="@color/colorPrimary"
+            android:textSize="?attr/dialogPreferredPadding" />
+
+        <TextView
+            android:id="@+id/texto_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Para recibir mas información envíanos tus comentarios."
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/fab_margin"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <EditText
+            android:id="@+id/txt_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/background_light"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <EditText
+            android:id="@+id/txt_correo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/background_light"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <EditText
+            android:id="@+id/txt_curso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/background_light"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/mensaje"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/background_light"
+            android:ems="10"
+            android:gravity="left"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btn_enviar"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary"
+            android:text="Enviar"
+            android:textColor="@android:color/background_light"
+            android:textSize="?attr/dialogPreferredPadding" />
+
+    </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
