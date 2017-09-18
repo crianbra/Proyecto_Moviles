@@ -98,47 +98,25 @@ public class CursosActivity extends AppCompatActivity
         navigation_view.setNavigationItemSelectedListener(this);
 
 
-        final Button buttonMatematica = (Button) findViewById(R.id.btn_curso_matematicas);
-        buttonMatematica.setTypeface(fuenteCursos);
-        buttonMatematica.setOnClickListener(new View.OnClickListener() {
+        final Button buttonCursos = (Button) findViewById(R.id.btn_curso);
+        buttonCursos.setTypeface(fuenteCursos);
+        buttonCursos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Log.d (tag,"Si llamo a la funcion");
-                Intent intent05 = new Intent(CursosActivity.this, MatematicaActivity.class);
+                Intent intent05 = new Intent(CursosActivity.this, OnlineActivity.class);
                 startActivity(intent05);
             }
         });
 
-        final Button buttonCelc = (Button) findViewById(R.id.btn_celc);
-        buttonCelc.setTypeface(fuenteCursos);
-        buttonCelc.setOnClickListener(new View.OnClickListener() {
+        final Button buttonEntidades = (Button) findViewById(R.id.btn_entidades);
+        buttonEntidades.setTypeface(fuenteCursos);
+        buttonEntidades.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Log.d (tag,"Si llamo a la funcion");
                 Intent intent06 = new Intent(CursosActivity.this, CelcActivity.class);
                 startActivity(intent06);
-            }
-        });
-
-        final Button buttonAsiri = (Button) findViewById(R.id.btn_asiri);
-        buttonAsiri.setTypeface(fuenteCursos);
-        buttonAsiri.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Log.d (tag,"Si llamo a la funcion");
-                Intent intent07 = new Intent(CursosActivity.this, AsiriActivity.class);
-                startActivity(intent07);
-            }
-        });
-
-        final Button buttonIcpol= (Button) findViewById(R.id.btn_icpol);
-        buttonIcpol.setTypeface(fuenteCursos);
-        buttonIcpol.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Log.d (tag,"Si llamo a la funcion");
-                Intent intent08 = new Intent(CursosActivity.this, IcpolActivity.class);
-                startActivity(intent08);
             }
         });
     }

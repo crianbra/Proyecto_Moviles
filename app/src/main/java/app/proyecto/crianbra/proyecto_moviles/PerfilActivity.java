@@ -86,14 +86,6 @@ public class PerfilActivity extends AppCompatActivity {
             }
         });
 
-        final Button actualizar = (Button) findViewById(R.id.btn_actualizar);
-        actualizar.setTypeface(fuente);
-        actualizar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
 
     }
 
@@ -143,9 +135,11 @@ public class PerfilActivity extends AppCompatActivity {
                 mail.setText(ja.getString(4));
                 edad.setText(ja.getString(5));
                 id.setText(ja.getString(6));
+                Toast.makeText(getApplicationContext(), "Se cargaron los datos correctamente", Toast.LENGTH_SHORT).show();
 
             }catch (JSONException e){
                 e.printStackTrace();
+                Toast.makeText(getApplicationContext(), "Se existen datos", Toast.LENGTH_SHORT).show();
             }
 
 

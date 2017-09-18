@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context="app.proyecto.crianbra.proyecto_moviles.Mate2Activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_mate_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Operaciones con Fracciones"
+                android:textColor="@color/colorPrimary"
+                android:textSize="?attr/dialogPreferredPadding" />
+
+            <com.google.android.youtube.player.YouTubePlayerView
+                android:id="@+id/youTubePlayer_mate_2"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/txt_matematicas_1"
+                android:layout_toLeftOf="@+id/texto_matematica"
+                android:layout_toStartOf="@+id/texto_matematica"
+                android:background="#fff" />
+
+            <TextView
+                android:id="@+id/texto_mate_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/texto2"
+                android:textColor="@color/colorPrimary"
+                android:textSize="?attr/dialogPreferredPadding" />
+
+            <Button
+                android:id="@+id/btn_mate2"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorPrimary"
+                android:text="@string/siguiente"
+                android:textColor="@android:color/background_light"
+                android:textSize="?attr/dialogPreferredPadding" />
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

@@ -43,8 +43,42 @@
     <string name="texto1">El objetivo inicial de esta asignatura es conseguir que los estudiantes de primer curso se hagan con los procedimientos prácticos básicos, que permiten la adaptación del estudio de las Matemáticas, en la Universidad.</string>
     <string name="siguiente">Siguiente</string>
 
+
+    <string name="texto2">Las fracciones, en su significado más simple, nos indican el número de partes que tomamos de un “todo” al que llamamos unidad. Al número de partes que tomamos lo llamamos numerador y al número de partes iguales en que dividimos la unidad, denominador.</string>
+
     <string name="felicidades">Felicidades</string>
-    <string name="texto">Has aprobado con éxitos el curso de Matemáticas 1.</string>
+    <string name="texto">Has terminado el curso de Matemáticas 1.</string>
     <string name="terminaste">Terminaste</string>
+
+    <!--<string name="check">Comprueba</string>
+    <string name="question">Pregunta</string>
+    <string name="question_content">Cual es el mínimo común múltiplo de 1/3 - 1/4 + 8/5 - 2/9 ?</string>
+    <string name="correct">Muy bien!</string>
+    <string name="incorrect">Incorrecto...</string>
+
+    <array name="answers">
+        <item>120 - ciento veinte</item>
+        <item>30 - treinta</item>
+        <item>180 - ciento ochenta</item>
+    </array>
+
+    <integer name="correct_answer">2</integer>-->
+
+    <string name="question">Question</string>
+    <string name="check">Check</string>
+    <string name="correct">Muy Bien!</string>
+    <string name="incorrect">Incorrecto...</string>
+    <string name="next">Siguiente</string>
+    <string name="finish">Terminar</string>
+    <string name="prev">Anterior</string>
+    <string name="results">Resultados</string>
+    <string name="start_over">Empezar de Nuevo</string>
+
+    <array name="all_questions">
+        <item>Cual es el mínimo común múltiplo de 1/3 - 1/4 + 8/5 - 2/9 ?;120 - ciento veinte;30 - treinta;*180 - ciento ochenta</item>
+        <item>Cual es el resultado de 2 - 3/4 ?;*5/4;-5/4;3/4</item>
+        <item>Cual es el resultado final de la operación 1/3 - 1/4 + 8/5 - 2/9 ?;63/180;*263/180;263/120</item>
+
+    </array>
 
 </resources>

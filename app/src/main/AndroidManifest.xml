@@ -39,7 +39,17 @@
         <activity android:name="app.proyecto.crianbra.proyecto_moviles.IcpolActivity" />
         <activity android:name="app.proyecto.crianbra.proyecto_moviles.CelcActivity" />
         <activity android:name="app.proyecto.crianbra.proyecto_moviles.AsiriActivity" />
-        <activity android:name="app.proyecto.crianbra.proyecto_moviles.PerfilActivity"></activity>
+        <activity android:name="app.proyecto.crianbra.proyecto_moviles.PerfilActivity" />
+        <activity
+            android:name="app.proyecto.crianbra.proyecto_moviles.OnlineActivity"
+            android:parentActivityName="app.proyecto.crianbra.proyecto_moviles.CursosActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="app.proyecto.crianbra.proyecto_moviles.CursosActivity" />
+        </activity>
+        >
+        <activity android:name="app.proyecto.crianbra.proyecto_moviles.Mate2Activity" />
+        <activity android:name="app.proyecto.crianbra.proyecto_moviles.QuizActivity"></activity>
     </application>
 
 </manifest>

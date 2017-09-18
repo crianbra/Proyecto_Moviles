@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,136 +10,154 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <RelativeLayout
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/datos"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Datos Personales"
+            android:textColor="@color/colorPrimary"
+            android:textSize="?android:attr/expandableListPreferredChildPaddingLeft" />
 
+        <EditText
+            android:id="@+id/nombre"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/background_light"
+            android:ems="10"
+            android:hint="@string/nombre"
+            android:inputType="textPersonName" />
 
-            <EditText
-                android:id="@+id/nombre"
-                android:layout_width="270dp"
-                android:layout_height="50dp"
-                android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="15dp"
-                android:background="@android:color/background_light"
-                android:ems="10"
-                android:hint="@string/nombre"
-                android:inputType="textPersonName" />
+        <EditText
+            android:id="@+id/colegio"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/nombre"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/background_light"
+            android:ems="10"
+            android:hint="@string/colegio"
+            android:inputType="textPersonName" />
 
-            <EditText
-                android:id="@+id/colegio"
-                android:layout_width="270dp"
-                android:layout_height="50dp"
-                android:layout_below="@+id/nombre"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="16dp"
-                android:background="@android:color/background_light"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:hint="@string/colegio" />
+        <EditText
+            android:id="@+id/ciudad"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/colegio"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/background_light"
+            android:ems="10"
+            android:hint="@string/ciudad"
+            android:inputType="textPersonName" />
 
-            <EditText
-                android:id="@+id/ciudad"
-                android:layout_width="270dp"
-                android:layout_height="50dp"
-                android:layout_below="@+id/colegio"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="18dp"
-                android:background="@android:color/background_light"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:hint="@string/ciudad"/>
+        <EditText
+            android:id="@+id/mail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/ciudad"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/background_light"
+            android:ems="10"
+            android:hint="@string/mail"
+            android:inputType="textPersonName" />
 
-            <EditText
-                android:id="@+id/mail"
-                android:layout_width="270dp"
-                android:layout_height="50dp"
-                android:layout_below="@+id/ciudad"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="16dp"
-                android:background="@android:color/background_light"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:hint="@string/mail" />
+        <EditText
+            android:id="@+id/edad"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/mail"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/background_light"
+            android:ems="10"
+            android:hint="@string/edad"
+            android:inputType="textPersonName" />
 
-            <EditText
-                android:id="@+id/edad"
-                android:layout_width="270dp"
-                android:layout_height="50dp"
-                android:layout_below="@+id/mail"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="14dp"
-                android:background="@android:color/background_light"
-                android:ems="10"
-                android:hint="@string/edad"
-                android:inputType="textPersonName" />
+        <EditText
+            android:id="@+id/id"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/edad"
+            android:layout_alignStart="@+id/edad"
+            android:layout_below="@+id/edad"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/background_light"
+            android:ems="10"
+            android:hint="@string/facebook"
+            android:inputType="textPersonName" />
 
-            <EditText
-                android:id="@+id/id"
-                android:layout_width="270dp"
-                android:layout_height="50dp"
-                android:layout_alignLeft="@+id/edad"
-                android:layout_alignStart="@+id/edad"
-                android:layout_below="@+id/edad"
-                android:layout_marginTop="14dp"
-                android:background="@android:color/background_light"
-                android:ems="10"
-                android:hint="@string/facebook"
-                android:inputType="textPersonName" />
+        <Button
+            android:id="@+id/btn_guardar"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignBaseline="@+id/btn_cargar"
+            android:layout_alignBottom="@+id/btn_cargar"
+            android:layout_alignLeft="@+id/id"
+            android:layout_alignStart="@+id/id"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/guardar"
+            android:textColor="@android:color/background_light"
+            android:textSize="?attr/dialogPreferredPadding" />
 
-            <Button
-                android:id="@+id/btn_guardar"
-                android:layout_width="130dp"
-                android:layout_height="80dp"
-                android:background="@color/colorPrimary"
-                android:text="@string/guardar"
-                android:textColor="@android:color/background_light"
-                android:textSize="?attr/dialogPreferredPadding"
-                android:layout_alignBaseline="@+id/btn_cargar"
-                android:layout_alignBottom="@+id/btn_cargar"
-                android:layout_alignLeft="@+id/id"
-                android:layout_alignStart="@+id/id" />
+        <Button
+            android:id="@+id/btn_cargar"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignEnd="@+id/id"
+            android:layout_alignRight="@+id/id"
+            android:layout_below="@+id/id"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/cargar"
+            android:textColor="@android:color/background_light"
+            android:textSize="?attr/dialogPreferredPadding" />
 
-            <Button
-                android:id="@+id/btn_cargar"
-                android:layout_width="130dp"
-                android:layout_height="80dp"
-                android:background="@color/colorPrimary"
-                android:text="@string/cargar"
-                android:textColor="@android:color/background_light"
-                android:textSize="?attr/dialogPreferredPadding"
-                android:layout_marginTop="30dp"
-                android:layout_below="@+id/id"
-                android:layout_alignRight="@+id/id"
-                android:layout_alignEnd="@+id/id" />
+        <Button
+            android:id="@+id/btn_salir"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignLeft="@+id/btn_cargar"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/btn_cargar"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/salir"
+            android:textColor="@android:color/background_light"
+            android:textSize="?attr/dialogPreferredPadding" />
+    </LinearLayout>
 
-            <Button
-                android:id="@+id/btn_actualizar"
-                android:layout_width="130dp"
-                android:layout_height="80dp"
-                android:layout_alignLeft="@+id/btn_guardar"
-                android:layout_alignStart="@+id/btn_guardar"
-                android:layout_below="@+id/btn_guardar"
-                android:layout_marginTop="12dp"
-                android:background="@color/colorPrimary"
-                android:text="@string/actualizar"
-                android:textColor="@android:color/background_light"
-                android:textSize="?attr/dialogPreferredPadding" />
-
-            <Button
-                android:id="@+id/btn_salir"
-                android:layout_width="130dp"
-                android:layout_height="80dp"
-                android:layout_alignLeft="@+id/btn_cargar"
-                android:layout_alignParentBottom="true"
-                android:layout_alignStart="@+id/btn_cargar"
-                android:background="@color/colorPrimary"
-                android:text="@string/salir"
-                android:textColor="@android:color/background_light"
-                android:textSize="?attr/dialogPreferredPadding" />
-
-        </RelativeLayout>
     </ScrollView>
 
-</RelativeLayout>
+</LinearLayout>

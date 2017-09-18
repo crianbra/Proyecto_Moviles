@@ -36,7 +36,7 @@ public class Matematica2Activity extends AppCompatActivity {
                 Log.d (tag,"Si llamo a la funcion");
                 Intent intent05 = new Intent(Matematica2Activity.this, CursosActivity.class);
                 startActivity(intent05);
-                Toast.makeText(getApplicationContext(),"Has aprobado con éxito el curso.",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"Has terminado el curso de Matemáticas 1.",Toast.LENGTH_SHORT).show();
             }
         });
     }
