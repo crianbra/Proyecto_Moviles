@@ -39,7 +39,7 @@ public class EntidadesActivity extends ActionBarActivity {
         buttonAsiri.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent05 = new Intent(EntidadesActivity.this, AsiriActivity.class);
+                Intent intent05 = new Intent(EntidadesActivity.this, AsiriInfoActivity.class);
                 startActivity(intent05);
             }
         });
@@ -49,7 +49,7 @@ public class EntidadesActivity extends ActionBarActivity {
         buttonICPOL.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent05 = new Intent(EntidadesActivity.this, IcpolActivity.class);
+                Intent intent05 = new Intent(EntidadesActivity.this, IcpolInfoActivity.class);
                 startActivity(intent05);
             }
         });

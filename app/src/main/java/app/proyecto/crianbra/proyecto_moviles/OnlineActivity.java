@@ -23,14 +23,44 @@ public class OnlineActivity extends ActionBarActivity {
         actionBar.setDisplayHomeAsUpEnabled(true);
 
         String carpetaFuente = "fonts/galette-med.otf";
-        Typeface fuenteCursos = Typeface.createFromAsset(getAssets(), carpetaFuente);
+        Typeface fuente = Typeface.createFromAsset(getAssets(), carpetaFuente);
 
         final Button buttonMatematica = (Button) findViewById(R.id.btn_matematicas);
-        buttonMatematica.setTypeface(fuenteCursos);
+        buttonMatematica.setTypeface(fuente);
         buttonMatematica.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent05 = new Intent(OnlineActivity.this, MatematicaActivity.class);
+                startActivity(intent05);
+            }
+        });
+
+        final Button btnAlgebra = (Button) findViewById(R.id.btn_algebra);
+        btnAlgebra.setTypeface(fuente);
+        btnAlgebra.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent05 = new Intent(OnlineActivity.this, AsiriInfoActivity.class);
+                startActivity(intent05);
+            }
+        });
+
+        final Button btnEstadistica = (Button) findViewById(R.id.btn_estadistica);
+        btnEstadistica.setTypeface(fuente);
+        btnEstadistica.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent05 = new Intent(OnlineActivity.this, AsiriInfoActivity.class);
+                startActivity(intent05);
+            }
+        });
+
+        final Button btnCalculo = (Button) findViewById(R.id.btn_calculo);
+        btnCalculo.setTypeface(fuente);
+        btnCalculo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent05 = new Intent(OnlineActivity.this, AsiriInfoActivity.class);
                 startActivity(intent05);
             }
         });

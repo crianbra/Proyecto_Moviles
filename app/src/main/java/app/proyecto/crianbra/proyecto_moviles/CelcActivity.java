@@ -15,24 +15,24 @@ import android.widget.Toast;
 import com.example.crianbra.proyecto_moviles.R;
 
 
-public class CelcActivity extends ActionBarActivity {
+public class CelcActivity extends AppCompatActivity {
 
-    private String cursosCelc[]=new String[]{"Curso de Computación","Curso de Asistente Contable","Curso de Electricidad Básica",
-            "Curso de SENESCYT-INEVAL","Curso de Diseño Gráfico Básico","Curso Avanzado de Excel", "Curso de Programación"};
+    private String cursosCelc[]=new String[]{"Curso de Computación","Curso de Asistente Contable",
+            "Curso de SENESCYT-INEVAL","Curso de Diseño Gráfico Básico", "Curso de Programación"};
 
     private String descripcion[]=new String[]{"Horario Lunes-Miercoles-Viernes de 8:00am a 10:00am","Horario Lunes-Miercoles-Viernes de 10:00am a 12:00pm",
             "Horario Lunes-Miercoles-Viernes de 14:00pm a 16:00am","Horario Martes y Jueves de 8:00am a 10:00am",
-            "Horario Martes y Jueves de 10:00am a 12:00am", "Horario Martes y Jueves de 14:00pm a 16:00am", "Sabados y Domingos de 8:00am a 11:00pm",};
+            "Horario Martes y Jueves de 10:00am a 12:00am"};
 
     private Integer[] imgid={
 
             R.drawable.computacion,
             R.drawable.contable,
-            R.drawable.electricidad,
             R.drawable.senescyt,
             R.drawable.diseno,
-            R.drawable.excel,
             R.drawable.programacion
+
+
     };
 
     private ListView lista;
@@ -42,8 +42,8 @@ public class CelcActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_celc);
 
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.setDisplayHomeAsUpEnabled(true);
+        //ActionBar actionBar = getSupportActionBar();
+        //actionBar.setDisplayHomeAsUpEnabled(true);
 
 
         LenguajeListAdapter adapter=new LenguajeListAdapter(this,cursosCelc,descripcion,imgid);
@@ -53,9 +53,9 @@ public class CelcActivity extends ActionBarActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 //String Slecteditem= cursosCelc[+position];
-                String Slecteditem= (String) parent.getItemAtPosition(position);
                 //Toast.makeText(getApplicationContext(), Slecteditem, Toast.LENGTH_SHORT).show();
 
+                String Slecteditem= (String) parent.getItemAtPosition(position);
                 Intent i = new Intent(CelcActivity.this, CelcInfoActivity.class);
                 String data [] = new String [3];
                 i.putExtra("curso", ""+Slecteditem);

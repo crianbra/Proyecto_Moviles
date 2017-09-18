@@ -7,8 +7,8 @@ android {
         applicationId "app.proyecto.crianbra.proyecto_moviles"
         minSdkVersion 15
         targetSdkVersion 26
-        versionCode 8
-        versionName "1.7"
+        versionCode 14
+        versionName "2.3"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {

@@ -1,6 +1,7 @@
 package app.proyecto.crianbra.proyecto_moviles;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -44,8 +45,16 @@ public class AsiriActivity extends AppCompatActivity {
         lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                String Slecteditem= cursosAsiri[+position];
-                Toast.makeText(getApplicationContext(), Slecteditem, Toast.LENGTH_SHORT).show();
+                //String Slecteditem= cursosAsiri[+position];
+                //Toast.makeText(getApplicationContext(), Slecteditem, Toast.LENGTH_SHORT).show();
+                String Slecteditem= (String) parent.getItemAtPosition(position);
+                Intent i = new Intent(AsiriActivity.this, AsiriInfoActivity.class);
+                String data [] = new String [3];
+                i.putExtra("curso", ""+Slecteditem);
+                i.putExtra("name", ""+CursosActivity.user_name.getText());
+                i.putExtra("email", ""+CursosActivity.user_email.getText());
+                startActivity(i);
+
             }
         });
     }

@@ -18,7 +18,8 @@
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id" />
 
-        <activity android:name="app.proyecto.crianbra.proyecto_moviles.MainActivity">
+        <activity android:name="app.proyecto.crianbra.proyecto_moviles.MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -28,30 +29,48 @@
         <activity
             android:name="app.proyecto.crianbra.proyecto_moviles.CursosActivity"
             android:label="@string/title_activity_cursos"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name="app.proyecto.crianbra.proyecto_moviles.MatematicaActivity" />
-        <activity android:name="app.proyecto.crianbra.proyecto_moviles.Matematica2Activity" />
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name="app.proyecto.crianbra.proyecto_moviles.MatematicaActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="app.proyecto.crianbra.proyecto_moviles.Matematica2Activity"
+            android:screenOrientation="portrait"/>
         <activity
             android:name="com.facebook.FacebookActivity"
             android:configChanges="keyboard|keyboardHidden|screenLayout|orientation"
             android:label="@string/app_name"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-        <activity android:name="app.proyecto.crianbra.proyecto_moviles.IcpolActivity" />
-        <activity android:name="app.proyecto.crianbra.proyecto_moviles.CelcActivity" />
-        <activity android:name="app.proyecto.crianbra.proyecto_moviles.AsiriActivity" />
-        <activity android:name="app.proyecto.crianbra.proyecto_moviles.PerfilActivity" />
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name="app.proyecto.crianbra.proyecto_moviles.IcpolActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="app.proyecto.crianbra.proyecto_moviles.CelcActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="app.proyecto.crianbra.proyecto_moviles.AsiriActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="app.proyecto.crianbra.proyecto_moviles.PerfilActivity"
+            android:screenOrientation="portrait"/>
         <activity
             android:name="app.proyecto.crianbra.proyecto_moviles.OnlineActivity"
-            android:parentActivityName="app.proyecto.crianbra.proyecto_moviles.CursosActivity">
+            android:parentActivityName="app.proyecto.crianbra.proyecto_moviles.CursosActivity"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="app.proyecto.crianbra.proyecto_moviles.CursosActivity" />
         </activity>
         >
-        <activity android:name="app.proyecto.crianbra.proyecto_moviles.Mate2Activity" />
-        <activity android:name="app.proyecto.crianbra.proyecto_moviles.QuizActivity" />
-        <activity android:name="app.proyecto.crianbra.proyecto_moviles.EntidadesActivity" />
-        <activity android:name="app.proyecto.crianbra.proyecto_moviles.CelcInfoActivity"></activity>
+        <activity android:name="app.proyecto.crianbra.proyecto_moviles.Mate2Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="app.proyecto.crianbra.proyecto_moviles.QuizActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="app.proyecto.crianbra.proyecto_moviles.EntidadesActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="app.proyecto.crianbra.proyecto_moviles.CelcInfoActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="app.proyecto.crianbra.proyecto_moviles.AsiriInfoActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="app.proyecto.crianbra.proyecto_moviles.IcpolInfoActivity"
+            android:screenOrientation="portrait"
+            ></activity>
     </application>
 
 </manifest>

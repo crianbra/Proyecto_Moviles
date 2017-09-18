@@ -5,7 +5,6 @@ import android.graphics.Typeface;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -14,9 +13,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.crianbra.proyecto_moviles.R;
-
-import org.json.JSONArray;
-import org.json.JSONException;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -27,28 +23,29 @@ import java.net.URL;
 
 import javax.net.ssl.HttpsURLConnection;
 
-public class CelcInfoActivity extends AppCompatActivity {
+public class AsiriInfoActivity extends AppCompatActivity {
 
     EditText nombre, correo, asunto, mensaje;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_celc_info);
+        setContentView(R.layout.activity_asiri_info);
 
         String carpetaFuente = "fonts/galette-med.otf";
         Typeface fuente = Typeface.createFromAsset(getAssets(), carpetaFuente);
 
-        TextView celc = (TextView)findViewById(R.id.celc);
-        TextView texto_celc = (TextView)findViewById(R.id.texto_cel);
+        TextView asiri = (TextView)findViewById(R.id.asiri);
+        asiri.setTypeface(fuente);
+        /*TextView texto_asiri = (TextView)findViewById(R.id.texto_asiri);
         TextView texto_info = (TextView)findViewById(R.id.texto_info);
         nombre = (EditText) findViewById(R.id.txt_nombre);
         correo = (EditText) findViewById(R.id.txt_correo);
         asunto = (EditText) findViewById(R.id.txt_curso);
         mensaje = (EditText) findViewById(R.id.mensaje);
 
-        celc.setTypeface(fuente);
-        texto_celc.setTypeface(fuente);
+        asiri.setTypeface(fuente);
+        texto_asiri.setTypeface(fuente);
         texto_info.setTypeface(fuente);
         nombre.setTypeface(fuente);
         correo.setTypeface(fuente);
@@ -59,12 +56,14 @@ public class CelcInfoActivity extends AppCompatActivity {
         correo.setText((String)getIntent().getExtras().get("email"));
         asunto.setText((String)getIntent().getExtras().get("curso"));
 
+
+
         final Button salir = (Button) findViewById(R.id.btn_salir);
         salir.setTypeface(fuente);
         salir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent05 = new Intent(CelcInfoActivity.this, EntidadesActivity.class);
+                Intent intent05 = new Intent(AsiriInfoActivity.this, EntidadesActivity.class);
                 startActivity(intent05);
             }
         });
@@ -78,13 +77,13 @@ public class CelcInfoActivity extends AppCompatActivity {
 
             }
         });
-
+*/
 
 
 
     }
 
-    private class CargarDatos1 extends AsyncTask<String, Void, String> {
+    /*private class CargarDatos1 extends AsyncTask<String, Void, String> {
 
         @Override
         protected String doInBackground(String... urls) {
@@ -165,5 +164,5 @@ public class CelcInfoActivity extends AppCompatActivity {
             maxReadSize -= readSize;
         }
         return buffer.toString();
-    }
+    }*/
 }

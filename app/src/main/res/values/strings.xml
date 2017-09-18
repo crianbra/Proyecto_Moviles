@@ -74,6 +74,10 @@
     <string name="results">Resultados</string>
     <string name="start_over">Empezar de Nuevo</string>
 
+    <string name="algebra_lineal">Álgebra Lineal</string>
+    <string name="estadistica">Estadística</string>
+    <string name="calculo">Cálculo</string>
+
     <array name="all_questions">
         <item>Cual es el mínimo común múltiplo de 1/3 - 1/4 + 8/5 - 2/9 ?;120 - ciento veinte;30 -
             treinta;*180 - ciento ochenta

@@ -111,6 +111,18 @@
             android:textColor="@android:color/background_light"
             android:textSize="?attr/dialogPreferredPadding" />
 
+        <Button
+            android:id="@+id/btn_salir"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary"
+            android:text="Salir"
+            android:textColor="@android:color/background_light"
+            android:textSize="?attr/dialogPreferredPadding" />
+
     </LinearLayout>
     </ScrollView>
 </android.support.constraint.ConstraintLayout>
